@@ -1,2 +1,185 @@
 <body>
-    <?php $this->load->view('contacts/quotemodal') ?>
+  <!-- Quote Modal (Original widget loaded dynamically) -->
+  <?php $this->load->view('contacts/quotemodal') ?>
+
+  <header class="main-header d-none d-lg-block">
+    <div class="nav-card-container">
+      <div class="nav-card-inner">
+        <!-- Logo Section -->
+        <div class="logo-wrapper">
+          <a href="<?= base_url() ?>" class="header-logo-link">
+            <img src="<?= base_url('assets/images/logo.svg') ?>" alt="Tranways India Packers and Movers" class="logo-img">
+          </a>
+        </div>
+
+        <!-- Right Side Two-Row Content -->
+        <div class="header-right-content">
+          <div class="header-top-bar">
+            <div class="top-bar-curve">
+              <svg viewBox="0 0 100 50" preserveAspectRatio="none" style="display: block; width: 100%; height: 100%;">
+                <path d="M100,0 L45,0 C20,0 10,25 25,38 C35,48 48,50 70,50 L100,50 Z" fill="var(--primary-blue)" />
+                <path d="M45,0 C20,0 10,25 25,38 C35,48 48,50 70,50" fill="none" stroke="var(--primary-orange)" stroke-width="5" stroke-linecap="round" />
+              </svg>
+            </div>
+            
+            <div class="top-bar-content">
+              <a href="<?= $phonehtml ?>" class="top-info-link">
+                <span class="icon-circle"><i class="fa-solid fa-phone"></i></span>
+                <span class="info-text"><?= $phone ?></span>
+              </a>
+              <span class="top-bar-sep">|</span>
+              <a href="<?= $mailhtml ?>" class="top-info-link">
+                <span class="icon-circle"><i class="fa-solid fa-envelope"></i></span>
+                <span class="info-text"><?= $mail ?></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Row 2: Desktop Menu & Quote Button -->
+          <div class="header-bottom-bar">
+            <nav class="desktop-nav">
+              <ul class="desktop-menu">
+                <li class="menu-item active">
+                  <a href="<?= base_url() ?>">HOME</a>
+                </li>
+                <li class="menu-item">
+                  <a href="<?= base_url('about') ?>">ABOUT</a>
+                </li>
+                <li class="menu-item has-dropdown">
+                  <a href="<?= base_url('services') ?>" class="dropdown-toggle-link">
+                    SERVICES <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                  </a>
+                  <ul class="dropdown-menu-list">
+                    <li><a href="<?= base_url('packers-movers') ?>">Packers &amp; Movers</a></li>
+                    <li><a href="<?= base_url('services/home-shifting') ?>">Home Shifting</a></li>
+                    <li><a href="<?= base_url('services/office-shifting') ?>">Office Shifting</a></li>
+                    <li><a href="<?= base_url('services/car-transportation') ?>">Car Transportation</a></li>
+                    <li><a href="<?= base_url('services/packing-unpacking') ?>">Packing &amp; Unpacking</a></li>
+                    <li><a href="<?= base_url('services/loading-unloading') ?>">Loading &amp; Unloading</a></li>
+                    <li><a href="<?= base_url('services/storage-solutions') ?>">Storage Solutions</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href="<?= base_url('process') ?>">LOCATIONS</a>
+                </li>
+                <li class="menu-item">
+                  <a href="<?= base_url('gallery') ?>">GALLERY</a>
+                </li>
+                <li class="menu-item">
+                  <a href="<?= base_url('contacts') ?>">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+
+            <button class="btn-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
+              <span class="btn-quote-icon"><i class="fa-solid fa-box-open"></i></span>
+              <span class="btn-quote-text">GET A QUOTE</span>
+              <i class="fa-solid fa-arrow-right btn-quote-arrow"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <header class="mobile-header d-block d-lg-none">
+    <div class="mobile-navbar-bar">
+      <!-- Logo -->
+      <a href="<?= base_url() ?>" class="mobile-logo-link">
+        <img src="<?= base_url('assets/images/logo.svg') ?>" alt="Tranways India Logo" class="mobile-logo-img" loading="lazy">
+      </a>
+
+      <button class="mobile-hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay"></div>
+  
+  <div class="fullscreen-menu" id="fullscreenMenu">
+    <!-- Absolute Close Button -->
+    <button class="drawer-close-btn" id="closeMenuBtn" aria-label="Close Menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <!-- Drawer Navigation List -->
+    <div class="drawer-body">
+      <ul class="drawer-menu-list">
+        <li class="drawer-menu-item active">
+          <a href="<?= base_url() ?>">
+            <span class="drawer-item-left"><i class="fa-solid fa-house"></i>HOME</span>
+            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+          </a>
+        </li>
+        <li class="drawer-menu-item">
+          <a href="<?= base_url('about') ?>">
+            <span class="drawer-item-left"><i class="fa-solid fa-user"></i>ABOUT US</span>
+            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+          </a>
+        </li>
+        
+        <li class="drawer-menu-item has-submenu">
+          <div class="drawer-item-toggle" id="drawerServicesToggle">
+            <span class="drawer-item-left"><i class="fa-solid fa-cubes"></i>SERVICES</span>
+            <span class="drawer-item-right"><i class="fa-solid fa-chevron-down drawer-submenu-arrow"></i></span>
+          </div>
+          <ul class="drawer-submenu-list" id="drawerSubmenu">
+            <li><a href="<?= base_url('packers-movers') ?>">Packers &amp; Movers</a></li>
+            <li><a href="<?= base_url('services/home-shifting') ?>">Home Shifting</a></li>
+            <li><a href="<?= base_url('services/office-shifting') ?>">Office Shifting</a></li>
+            <li><a href="<?= base_url('services/car-transportation') ?>">Car Transportation</a></li>
+            <li><a href="<?= base_url('services/packing-unpacking') ?>">Packing &amp; Unpacking</a></li>
+            <li><a href="<?= base_url('services/loading-unloading') ?>">Loading &amp; Unloading</a></li>
+            <li><a href="<?= base_url('services/storage-solutions') ?>">Storage Solutions</a></li>
+          </ul>
+        </li>
+
+        <li class="drawer-menu-item">
+          <a href="<?= base_url('process') ?>">
+            <span class="drawer-item-left"><i class="fa-solid fa-gear"></i>OUR PROCESS</span>
+            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+          </a>
+        </li>
+        <li class="drawer-menu-item">
+          <a href="<?= base_url('gallery') ?>">
+            <span class="drawer-item-left"><i class="fa-solid fa-image"></i>GALLERY</span>
+            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+          </a>
+        </li>
+        <li class="drawer-menu-item">
+          <a href="<?= base_url('blog') ?>">
+            <span class="drawer-item-left"><i class="fa-solid fa-file-lines"></i>BLOG</span>
+            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+          </a>
+        </li>
+        <li class="drawer-menu-item">
+          <a href="<?= base_url('contacts') ?>">
+            <span class="drawer-item-left"><i class="fa-solid fa-phone"></i>CONTACT US</span>
+            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Drawer Sticky Footer CTAs -->
+    <div class="drawer-footer-ctas">
+      <a href="tel:<?= $phone ?>" class="btn-drawer-call">
+        <i class="fa-solid fa-phone"></i>CALL NOW
+      </a>
+      <button class="btn-drawer-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
+        <i class="fa-solid fa-box-open"></i>GET A QUOTE
+      </button>
+    </div>
+  </div>
+
+  <script>
+    $(function () {
+      $('#hamburgerBtn').click(() => $('#fullscreenMenu, #menuOverlay').addClass('active'));
+      $('#closeMenuBtn, #menuOverlay').click(() => $('#fullscreenMenu, #menuOverlay').removeClass('active'));
+      $('#drawerServicesToggle').click(function (e) {
+        e.preventDefault();
+        $(this).closest('.has-submenu').toggleClass('open');
+      });
+    });
+  </script>
