@@ -24,12 +24,12 @@
             
             <div class="top-bar-content">
               <a href="<?= $phonehtml ?>" class="top-info-link">
-                <span class="icon-circle"><i class="fa-solid fa-phone"></i></span>
+                <span class="icon-circle"><i class="bi bi-telephone-fill"></i></span>
                 <span class="info-text"><?= $phone ?></span>
               </a>
               <span class="top-bar-sep">|</span>
               <a href="<?= $mailhtml ?>" class="top-info-link">
-                <span class="icon-circle"><i class="fa-solid fa-envelope"></i></span>
+                <span class="icon-circle"><i class="bi bi-envelope-fill"></i></span>
                 <span class="info-text"><?= $mail ?></span>
               </a>
             </div>
@@ -47,7 +47,7 @@
                 </li>
                 <li class="menu-item has-dropdown">
                   <a href="<?= base_url('services') ?>" class="dropdown-toggle-link">
-                    SERVICES <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    SERVICES <i class="bi bi-chevron-down dropdown-arrow"></i>
                   </a>
                   <ul class="dropdown-menu-list">
                     <li><a href="<?= base_url('packers-movers') ?>">Packers &amp; Movers</a></li>
@@ -72,9 +72,9 @@
             </nav>
 
             <button class="btn-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
-              <span class="btn-quote-icon"><i class="fa-solid fa-box-open"></i></span>
+              <span class="btn-quote-icon"><i class="bi bi-box-seam"></i></span>
               <span class="btn-quote-text">GET A QUOTE</span>
-              <i class="fa-solid fa-arrow-right btn-quote-arrow"></i>
+              <i class="bi bi-arrow-right btn-quote-arrow"></i>
             </button>
           </div>
         </div>
@@ -90,7 +90,7 @@
       </a>
 
       <button class="mobile-hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
-        <i class="fa-solid fa-bars"></i>
+        <i class="bi bi-list"></i>
       </button>
     </div>
   </header>
@@ -100,7 +100,7 @@
   <div class="fullscreen-menu" id="fullscreenMenu">
     <!-- Absolute Close Button -->
     <button class="drawer-close-btn" id="closeMenuBtn" aria-label="Close Menu">
-      <i class="fa-solid fa-xmark"></i>
+      <i class="bi bi-x-lg"></i>
     </button>
 
     <!-- Drawer Navigation List -->
@@ -108,21 +108,21 @@
       <ul class="drawer-menu-list">
         <li class="drawer-menu-item active">
           <a href="<?= base_url() ?>">
-            <span class="drawer-item-left"><i class="fa-solid fa-house"></i>HOME</span>
-            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+            <span class="drawer-item-left"><i class="bi bi-house-door-fill"></i>HOME</span>
+            <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
         </li>
         <li class="drawer-menu-item">
           <a href="<?= base_url('about') ?>">
-            <span class="drawer-item-left"><i class="fa-solid fa-user"></i>ABOUT US</span>
-            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+            <span class="drawer-item-left"><i class="bi bi-person-fill"></i>ABOUT US</span>
+            <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
         </li>
         
         <li class="drawer-menu-item has-submenu">
           <div class="drawer-item-toggle" id="drawerServicesToggle">
-            <span class="drawer-item-left"><i class="fa-solid fa-cubes"></i>SERVICES</span>
-            <span class="drawer-item-right"><i class="fa-solid fa-chevron-down drawer-submenu-arrow"></i></span>
+            <span class="drawer-item-left"><i class="bi bi-box-seam-fill"></i>SERVICES</span>
+            <span class="drawer-item-right"><i class="bi bi-chevron-down drawer-submenu-arrow"></i></span>
           </div>
           <ul class="drawer-submenu-list" id="drawerSubmenu">
             <li><a href="<?= base_url('packers-movers') ?>">Packers &amp; Movers</a></li>
@@ -137,26 +137,26 @@
 
         <li class="drawer-menu-item">
           <a href="<?= base_url('process') ?>">
-            <span class="drawer-item-left"><i class="fa-solid fa-gear"></i>OUR PROCESS</span>
-            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+            <span class="drawer-item-left"><i class="bi bi-gear-fill"></i>OUR PROCESS</span>
+            <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
         </li>
         <li class="drawer-menu-item">
           <a href="<?= base_url('gallery') ?>">
-            <span class="drawer-item-left"><i class="fa-solid fa-image"></i>GALLERY</span>
-            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+            <span class="drawer-item-left"><i class="bi bi-image-fill"></i>GALLERY</span>
+            <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
         </li>
         <li class="drawer-menu-item">
           <a href="<?= base_url('blog') ?>">
-            <span class="drawer-item-left"><i class="fa-solid fa-file-lines"></i>BLOG</span>
-            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+            <span class="drawer-item-left"><i class="bi bi-file-earmark-text-fill"></i>BLOG</span>
+            <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
         </li>
         <li class="drawer-menu-item">
           <a href="<?= base_url('contacts') ?>">
-            <span class="drawer-item-left"><i class="fa-solid fa-phone"></i>CONTACT US</span>
-            <span class="drawer-item-right"><i class="fa-solid fa-chevron-right"></i></span>
+            <span class="drawer-item-left"><i class="bi bi-telephone-fill"></i>CONTACT US</span>
+            <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
         </li>
       </ul>
@@ -165,10 +165,10 @@
     <!-- Drawer Sticky Footer CTAs -->
     <div class="drawer-footer-ctas">
       <a href="tel:<?= $phone ?>" class="btn-drawer-call">
-        <i class="fa-solid fa-phone"></i>CALL NOW
+        <i class="bi bi-telephone-fill"></i>CALL NOW
       </a>
       <button class="btn-drawer-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
-        <i class="fa-solid fa-box-open"></i>GET A QUOTE
+        <i class="bi bi-box-seam"></i>GET A QUOTE
       </button>
     </div>
   </div>

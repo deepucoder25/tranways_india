@@ -577,7 +577,7 @@
 .btn-drawer-quote i {
   font-size: 12px;
 }
-.main-header .fa-phone{
+.main-header .bi-telephone-fill{
   display: inline-block;
   animation: phone-ring 3s ease-in-out infinite;
   transform-origin: center;

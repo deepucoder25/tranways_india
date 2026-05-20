@@ -1,4 +1,5 @@
 @import "navigation.css";
+@import "footer.css";
 /* ----- ROOT CSS VARIABLES ----- */
 :root {
   --primary-green: #0033a0;
