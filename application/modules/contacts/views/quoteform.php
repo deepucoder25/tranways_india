@@ -6,7 +6,7 @@
             </div>
         </div>
     </div>
-    <form method="post" id="quoteform" onsubmit="return false">
+    <form id="quoteform" class="ajax-form" data-url="<?php echo site_url('contacts/booking') ?>" data-result="quoteformresults" onsubmit="return false;">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -56,32 +56,8 @@
                     placeholder="Write Your Message" ></textarea>
             </div>
         </div>
-            <div id="resultquotefrom"></div>
+            <div id="quoteformresults"></div>
         <button id="submitbquoteform" type="submit" class="theme-btn btn-submit-quote">Submit <i class="far fa-paper-plane"></i></button>
-        <button onclick="$('#resultquotefrom').html('');"  type="reset" class="theme-btn btn-reset-quote">Clear <i class="far fa-trash-alt"></i></button>
+        <button onclick="$('#quoteformresults').html('');"  type="reset" class="theme-btn btn-reset-quote">Clear <i class="far fa-trash-alt"></i></button>
     </form>
 </div>
-<script type="text/javascript">
-    $(function() {
-        $('#submitbquoteform').click(function() {
-            $.ajax({
-                type: "POST",
-                url: "<?php echo site_url('contacts/booking') ?>",
-                data: $("#quoteform").serialize(),
-                beforeSend: function() {
-                    $('#resultquotefrom').html('<p class="text-danger fw-bold">Please wait...</p>');
-                },
-                success: function(data) {
-                    $('#resultquotefrom').empty();
-                    if (data == '1') {
-                        data = "<div class='alert alert-success'><p class='text-success fw-bold mb-0'>Thank you! Your quote request successfully submitted. We'll respond soon.</p></div>";
-                        $("#quoteform").trigger('reset');
-                        // Event snippet for Phone call lead conversion page
-                        gtag('event', 'conversion', {'send_to': 'AW-16778879117/JlJPCPjgvOwZEI3B5cA-'});
-                    }
-                    $('#resultquotefrom').html(data);
-                }
-            });
-        });
-    });
-</script>

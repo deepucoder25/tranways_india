@@ -10,7 +10,7 @@
       </div>
 
       <!-- Form -->
-      <form method="post" id="quotemodal" onsubmit="return false;">
+      <form id="quotemodal" class="ajax-form" data-url="<?php echo site_url('contacts/booking') ?>" data-result="resultquotemodal" onsubmit="return false;">
         <div class="modal-body bg-light">
 
           <!-- Row 1 -->
@@ -61,27 +61,3 @@
     </div>
   </div>
 </div>
-<!-- Script (unchanged logic) -->
-<script type="text/javascript">
-  $(function () {
-    $('#submitbquotemodal').click(function () {
-      $.ajax({
-        type: "POST",
-        url: "<?php echo site_url('contacts/booking') ?>",
-        data: $("#quotemodal").serialize(),
-        beforeSend: function () {
-          $('#resultquotemodal').html('<p class="text-center text-muted">Please wait...</p>');
-        },
-        success: function (data) {
-          $('#resultquotemodal').empty();
-          if (data == '1') {
-            data = "<div class='alert alert-success'>Thank you! Your quote request has been successfully submitted. We'll respond soon.</div>";
-            $("#quotemodal").trigger('reset');
-            gtag('event', 'conversion', {'send_to': 'AW-16778879117/JlJPCPjgvOwZEI3B5cA-'});
-          }
-          $('#resultquotemodal').html(data);
-        }
-      });
-    });
-  });
-</script>

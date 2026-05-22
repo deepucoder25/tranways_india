@@ -69,7 +69,7 @@
           </div>
           <p class="text-muted mb-4 pb-3 border-bottom">Fill out the form below to receive a free moving estimate or to ask any questions. Our team will get back to you within 30 minutes!</p>
           
-          <form method="post" id="getintouchform" onsubmit="return false" class="row g-4">
+          <form id="getintouchform" class="ajax-form" data-url="<?php echo site_url('contacts/contact'); ?>" data-result="resulttouch" onsubmit="return false;" class="row g-4">
             <div class="col-md-6 form_box">
               <label class="form-label fw-bold text-dark small text-uppercase">Full Name <span class="text-danger">*</span></label>
               <div class="input-group input-group-lg">

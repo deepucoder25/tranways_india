@@ -4,7 +4,19 @@ class Blog extends MX_Controller {
 
     function __construct(){
         parent::__construct();
-        $this->load->database();
+    }
+
+    private function slugify($text) {
+        $text = strtolower($text);
+        $text = preg_replace('~[^a-z0-9\s-]~', '', $text);
+        $text = preg_replace('~[\s-]+~', '-', $text);
+        return trim($text, '-');
+    }
+
+    private function loadBlogs() {
+        $path = FCPATH . 'admin_data/blogs.json';
+        if (!file_exists($path)) return [];
+        return json_decode(file_get_contents($path), true) ?: [];
     }
 
     function index() {
@@ -15,10 +27,15 @@ class Blog extends MX_Controller {
         $this->load->library('pagination');
         $this->load->helper('text'); 
 
+        $all_blogs = array_reverse($this->loadBlogs());
+        $total_rows = count($all_blogs);
+        $per_page = 6;
+        $offset = (int) $this->uri->segment(3);
+
         $config['base_url'] = site_url('blog/view');
-        $config['total_rows'] = $this->db->get('blog')->num_rows(); 
-        $config['per_page'] = 4; 
-        $config['num_links'] = 4; 
+        $config['total_rows'] = $total_rows;
+        $config['per_page'] = $per_page;
+        $config['uri_segment'] = 3;
 
         $config['full_tag_open'] = '<ul class="styled-pagination clearfix text-center">';
         $config['full_tag_close'] = '</ul>';
@@ -41,9 +58,9 @@ class Blog extends MX_Controller {
 
         $this->pagination->initialize($config);
 
-        $this->db->order_by("b_id", "desc"); 
-        $data['query'] = $this->db->get('blog', $config['per_page'], $this->uri->segment(3));
-        $data['total'] = $config['total_rows'];
+        $data['blogs'] = array_slice($all_blogs, $offset, $per_page);
+        $data['total'] = $total_rows;
+        $data['recent_posts'] = array_slice($all_blogs, 0, 5);
 
         $data['title'] = "Official Blog of ".$this->comp['company3']." India";
         $data['description'] = "Latest blog of ".$this->comp['company3'];
@@ -53,39 +70,46 @@ class Blog extends MX_Controller {
         echo Modules::run('template/layout2', $data);
     }
 
-    function view_reviews($id = '') {
-        if ($id) {
-            $where['b_id'] = $id;
-        }
-        return $this->db->order_by('b_id', 'desc')->where($where)->get('blog');
-    }
-
-    function read($title = '', $bid) {
+    function read($slug = '') {
+        // die("DEBUG: Slug received: " . $slug);
         $this->load->helper('text');
 
-        $blg = $this->db->where('b_id', $bid)->get('blog');
-        $b = $blg->result();
-        $data['query'] = $b;
+        $all_blogs = $this->loadBlogs();
+        $selected_blog = null;
+        
+        foreach ($all_blogs as $b) {
+            $custom_slug = $b['slug'] ?? '';
+            $auto_slug = $this->slugify($b['title']);
+            
+            // Handle CI's translate_uri_dashes by replacing _ back to - in incoming slug
+            $search_slug = str_replace('_', '-', $slug);
 
-        if ($blg->num_rows() > 0) {
-            $data['blogs'] = $this->view_reviews($bid);
-
-            if ($data['blogs']->num_rows() > 0) {
-                $rev = $data['blogs']->result();
-                $newview = $rev[0]->views + 3;
-                $this->db->where('b_id', $bid)->update("blog", array("views" => $newview));      
+            if (
+                (!empty($custom_slug) && strtolower($custom_slug) == strtolower($search_slug)) || 
+                (strtolower($auto_slug) == strtolower($search_slug)) ||
+                ($b['id'] == $search_slug)
+            ) {
+                $selected_blog = (object) $b;
+                break;
             }
+        }
 
-            $blg = $blg->result();
-            $data['title'] = ucfirst($blg[0]->title);
-            $data['description'] = word_limiter(strip_tags($blg[0]->description), 200);
-            $data['img'] = base_url('assets/uploads/blog/'.$blg[0]->image);
+        if ($selected_blog) {
+            $data['query'] = [$selected_blog];
+            $data['recent_posts'] = array_slice(array_reverse($all_blogs), 0, 5);
+            
+            $data['title'] = ucfirst($selected_blog->title);
+            $data['description'] = word_limiter(strip_tags($selected_blog->description), 200);
+            
+            $image_file = $selected_blog->image;
+            $data['img'] = ($image_file && file_exists(FCPATH . 'uploads/blogs/' . $image_file)) ? base_url('uploads/blogs/'.$image_file) : base_url('assets/images/about/packers_movers.jpg');
+            
             $data['module'] = "blog";
             $data['view_file'] = "view"; 
 
             echo Modules::run('template/layout2', $data);
         } else {
-            echo "Invalid blog URL"; 
+            show_404();
         }
     }
 }
