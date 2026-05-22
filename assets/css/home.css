@@ -769,9 +769,43 @@
   color: var(--primary-orange, #f37021) !important;
 }
 
-/* Scroll Indicators (Dots) */
-.testimonial-indicators {
+/* Scroll Controls (Arrows + Dots Row) */
+.testimonial-controls {
   margin-top: 25px;
+  user-select: none;
+}
+
+.testimonial-arrow-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-blue, #0033a0);
+  background-color: transparent;
+  color: var(--primary-blue, #0033a0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  outline: none;
+  padding: 0;
+  line-height: 1;
+}
+
+.testimonial-arrow-btn:hover {
+  background-color: var(--primary-blue, #0033a0);
+  color: var(--white, #ffffff);
+  transform: scale(1.05);
+}
+
+.testimonial-arrow-btn:focus {
+  outline: none;
+}
+
+.testimonial-indicators {
+  margin: 0;
 }
 
 .indicator-dot {
@@ -780,8 +814,12 @@
   height: 9px;
   border-radius: 50%;
   background-color: #cbd5e1;
-  transition: var(--transition-smooth, all 0.3s ease);
+  transition: all 0.3s ease;
   text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .indicator-dot:hover {
@@ -791,8 +829,8 @@
 
 .indicator-dot.active {
   background-color: var(--primary-blue, #0033a0);
-  width: 22px;
-  border-radius: 5px;
+  transform: scale(1.25);
+  box-shadow: 0 0 0 2px rgba(0, 51, 160, 0.15);
 }
 
 /* SVGWaves container */
@@ -805,5 +843,344 @@
   .testimonial-slider-outer {
     padding-left: 45px;
     padding-right: 45px;
+  }
+}
+
+/* ==========================================================================
+   PREMIUM FAQs SECTION (HOME PAGE)
+   ========================================================================== */
+
+/* Custom Fluid Responsive Container to align with navbar and other sections */
+.faq-container-custom {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .faq-container-custom {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* Decorative grid dots */
+.faq-dots-pattern {
+  position: absolute;
+  width: 80px;
+  height: 120px;
+  background-image: radial-gradient(#cbd5e1 2px, transparent 2px);
+  background-size: 15px 15px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.faq-dots-left {
+  left: 20px;
+  top: 60px;
+}
+
+.faq-dots-right {
+  right: 20px;
+  top: 60px;
+}
+
+@media (max-width: 991.98px) {
+  .faq-dots-pattern {
+    display: none;
+  }
+}
+
+/* Header Label and Badge */
+.faq-label-badge {
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  color: var(--primary-orange, #f37021) !important;
+  font-weight: 700;
+}
+
+.faq-label-line {
+  display: inline-block;
+  width: 12px;
+  height: 3px;
+  background-color: var(--primary-blue, #0033a0);
+}
+
+.faq-separator {
+  width: 50px;
+  height: 3.5px;
+  background-color: var(--primary-orange, #f37021);
+  border-radius: 5px;
+}
+
+.faq-section-desc {
+  font-weight: 500;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* FAQ Accordion Items (pure CSS based on details and summary tags) */
+.faq-item {
+  background-color: var(--white, #ffffff);
+  border: 1px solid rgba(0, 51, 160, 0.06);
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 51, 160, 0.02);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  overflow: hidden;
+}
+
+.faq-item:hover {
+  box-shadow: 0 8px 25px rgba(0, 51, 160, 0.05);
+  border-color: rgba(0, 51, 160, 0.1);
+  transform: translateY(-2px);
+}
+
+.faq-summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  cursor: pointer;
+  list-style: none; /* Hide default chevron in modern browsers */
+  position: relative;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none; /* Hide default chevron in Chrome/Safari */
+}
+
+/* Question Heading text (inherited natural sizes) */
+.faq-question {
+  color: var(--primary-blue, #0033a0);
+  margin: 0;
+  flex-grow: 1;
+  padding-right: 15px;
+  transition: color 0.3s ease;
+  line-height: 1.4;
+}
+
+/* Circular Icon (Plus/Minus badge) */
+.faq-icon-wrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--primary-orange, #f37021);
+  color: var(--white, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(243, 112, 33, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hide standard HTML outline on focus */
+.faq-summary:focus {
+  outline: none;
+}
+
+.faq-icon-minus {
+  display: none;
+  line-height: 0;
+}
+
+.faq-icon-plus {
+  display: block;
+}
+
+/* Chevron arrow on the right */
+.faq-chevron {
+  margin-left: auto;
+  color: var(--primary-blue, #0033a0);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Accordion Answer Content box */
+.faq-content {
+  padding: 0 24px 22px 72px; /* Align text exactly with the question text */
+  transition: opacity 0.3s ease;
+}
+
+.faq-content p {
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* ACTIVE / OPEN STATE (Pure CSS - completely zero JS!) */
+details[open] {
+  background-color: #f4f7ff !important; /* Soft blue tint */
+  border-color: rgba(0, 51, 160, 0.15) !important;
+  box-shadow: 0 10px 30px rgba(0, 51, 160, 0.08) !important;
+  position: relative;
+}
+
+/* Glowing thick orange vertical line on the right side of the expanded card */
+details[open]::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: var(--primary-orange, #f37021);
+  border-radius: 0 14px 14px 0;
+}
+
+details[open] .faq-question {
+  color: var(--primary-blue, #0033a0);
+}
+
+details[open] .faq-icon-wrapper {
+  background-color: var(--primary-blue, #0033a0);
+  box-shadow: 0 4px 10px rgba(0, 51, 160, 0.25);
+  transform: rotate(180deg);
+}
+
+details[open] .faq-icon-plus {
+  display: none;
+}
+
+details[open] .faq-icon-minus {
+  display: block;
+}
+
+details[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+
+/* ==========================================================================
+   PREMIUM ACCORDION CTA BANNER Styling
+   ========================================================================== */
+.faq-cta-banner {
+  background-color: var(--primary-orange, #f37021); /* Backup right background color */
+  border: 1px solid rgba(0, 51, 160, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+/* Slanted Left Panel (Blue) */
+.faq-cta-left {
+  background-color: var(--primary-blue, #0033a0);
+  padding: 12px 25px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .faq-cta-left {
+    width: 60%;
+    /* Creates the gorgeous slanted separator on the right side of the blue panel */
+    clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
+    padding: 12px 80px 12px 40px; /* decreased top/bottom padding to 12px */
+  }
+}
+
+.faq-cta-icon-wrapper {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.faq-cta-left:hover .faq-cta-icon-wrapper {
+  transform: scale(1.1) rotate(-8deg);
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Slanted Right Panel (Orange) */
+.faq-cta-right {
+  padding: 12px 25px;
+  flex-grow: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .faq-cta-right {
+    margin-left: -5%; /* Overlaps with left slanted blue panel */
+    padding: 12px 40px 12px 60px; /* decreased top/bottom padding to 12px */
+  }
+}
+
+.faq-cta-circle-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--white, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faq-cta-right:hover .faq-cta-circle-icon {
+  transform: scale(1.1) translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.faq-cta-circle-icon .text-orange {
+  color: var(--primary-orange, #f37021) !important;
+  display: inline-block;
+  animation: phoneRing 2.5s infinite ease-in-out;
+  transform-origin: center;
+}
+
+/* Dynamic ringing animation for the phone icon */
+@keyframes phoneRing {
+  0%, 10%, 100% { transform: scale(1) rotate(0); }
+  12%, 16%, 20%, 24% { transform: scale(1.1) rotate(-15deg); }
+  14%, 18%, 22% { transform: scale(1.1) rotate(15deg); }
+  26%, 30% { transform: scale(1) rotate(0); }
+}
+
+.faq-cta-call-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.faq-cta-phone {
+  font-size: 22px;
+  font-weight: 900;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.faq-cta-phone:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 767.98px) {
+  .faq-cta-banner {
+    flex-direction: column;
+  }
+  .faq-cta-left, .faq-cta-right {
+    padding: 10px 15px; /* compact size on mobile screens */
+    width: 100%;
+  }
+  .faq-cta-phone {
+    font-size: 18px;
   }
 }

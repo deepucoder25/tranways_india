@@ -11,4 +11,4 @@
 <?php $this->load->view('testimonial_widget.php'); ?>
 
 <!-- Premium Faqs Section -->
-<?php $this->load->view('faqs_widget.php'); ?>
+<?php $this->load->view('faq_widget.php'); ?>

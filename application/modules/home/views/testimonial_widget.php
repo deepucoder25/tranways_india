@@ -168,78 +168,29 @@
 
 <!-- Lightweight Testimonial Slider Script -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const slider = document.getElementById('testimonialSlider');
-  const prevBtn = document.getElementById('testimonialPrev');
-  const nextBtn = document.getElementById('testimonialNext');
-  const dots = document.querySelectorAll('.indicator-dot');
+document.addEventListener('DOMContentLoaded', () => {
+  const s = document.getElementById('testimonialSlider'), dots = document.querySelectorAll('.indicator-dot');
+  const prev = document.getElementById('testimonialPrev'), next = document.getElementById('testimonialNext');
+  
+  const getWidth = () => (s.querySelector('.testimonial-slide')?.getBoundingClientRect().width || s.clientWidth) + 20;
 
-  function getSlideWidth() {
-    const slides = slider.querySelectorAll('.testimonial-slide');
-    if (slides.length > 0) {
-      return slides[0].getBoundingClientRect().width + 20; // slide width + gap (20px)
-    }
-    return slider.getBoundingClientRect().width;
-  }
+  prev?.addEventListener('click', () => s.scrollBy({ left: -getWidth(), behavior: 'smooth' }));
+  next?.addEventListener('click', () => s.scrollBy({ left: getWidth(), behavior: 'smooth' }));
 
-  // Scroll functionality on clicking arrows
-  if (prevBtn && nextBtn) {
-    prevBtn.addEventListener('click', function() {
-      slider.scrollBy({
-        left: -getSlideWidth(),
-        behavior: 'smooth'
-      });
-    });
-
-    nextBtn.addEventListener('click', function() {
-      slider.scrollBy({
-        left: getSlideWidth(),
-        behavior: 'smooth'
-      });
-    });
-  }
-
-  // Dot navigation click handlers (Zero page jump & robust position calculation!)
-  dots.forEach(dot => {
-    dot.addEventListener('click', function() {
-      const slideIndex = parseInt(this.getAttribute('data-slide'));
-      const slides = slider.querySelectorAll('.testimonial-slide');
-      if (slides[slideIndex]) {
-        const containerLeft = slider.getBoundingClientRect().left;
-        const slideLeft = slides[slideIndex].getBoundingClientRect().left;
-        const targetScrollLeft = slider.scrollLeft + (slideLeft - containerLeft);
-        
-        slider.scrollTo({
-          left: targetScrollLeft,
-          behavior: 'smooth'
-        });
-      }
+  dots.forEach(d => {
+    d.addEventListener('click', () => {
+      const slide = s.querySelectorAll('.testimonial-slide')[d.dataset.slide];
+      if (slide) s.scrollTo({ left: s.scrollLeft + (slide.getBoundingClientRect().left - s.getBoundingClientRect().left), behavior: 'smooth' });
     });
   });
 
-  // Sync dot indicators dynamically during swipe or scroll using robust bounding rects
-  slider.addEventListener('scroll', function() {
-    const slides = slider.querySelectorAll('.testimonial-slide');
-    const containerLeft = slider.getBoundingClientRect().left;
-    
-    let activeIndex = 0;
-    let minDiff = Infinity;
-    
-    slides.forEach((slide, index) => {
-      const diff = Math.abs(slide.getBoundingClientRect().left - containerLeft);
-      if (diff < minDiff) {
-        minDiff = diff;
-        activeIndex = index;
-      }
+  s.addEventListener('scroll', () => {
+    let min = Infinity, active = 0;
+    s.querySelectorAll('.testimonial-slide').forEach((slide, i) => {
+      const diff = Math.abs(slide.getBoundingClientRect().left - s.getBoundingClientRect().left);
+      if (diff < min) { min = diff; active = i; }
     });
-    
-    dots.forEach((dot, index) => {
-      if (index === activeIndex) {
-        dot.classList.add('active');
-      } else {
-        dot.classList.remove('active');
-      }
-    });
+    dots.forEach((d, i) => d.classList.toggle('active', i === active));
   });
 });
 </script>
