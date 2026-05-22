@@ -1,44 +1,39 @@
 <?php
-    include 'data/states.php';
+include 'data/states.php';
 ?>
 <?php
-  $state = [
-      [
-          "image" => "bihar.jpg",
-          "category" => "Bihar",
-          "title" => "Packers and Movers in Bihar",
-          "link" => "bihar"
-      ],
-  ];
-  ?>
+$state = [
+  [
+    "image" => "bihar.jpg",
+    "category" => "Bihar",
+    "title" => "Packers and Movers in Bihar",
+    "link" => "bihar"
+  ],
+];
+?>
 
-  <!-- ===== BRANCH GRID ===== -->
-  <section class="branch-section py-5">
-    <div class="container">
+<!-- ===== BRANCH GRID ===== -->
+<section class="branch-section py-5">
+  <div class="container">
 
-      <div class="row g-4">
+    <div class="row g-3"> <!-- tighter gap -->
 
-        <?php foreach ($state as $item): ?>
-        <div class="col-6 col-lg-3">
+      <?php foreach ($state as $item): ?>
+        <div class="col-6 col-md-4 col-lg-2">
 
-          <div class="branch-card">
+          <div class="classic-state-card">
 
-            <!-- IMAGE -->
-            <div class="branch-img">
+            <div class="csc-img">
               <img src="<?= base_url() ?>assets/images/state/<?= $item['image'] ?>" alt="<?= $item['title'] ?>">
-              <div class="branch-overlay"></div>
+              <div class="csc-overlay"></div>
+              <span class="csc-category"><?= $item['category'] ?></span>
             </div>
 
-            <!-- CONTENT -->
-            <div class="branch-content">
-              <span class="branch-location"><?= $item['category'] ?></span>
-              <h3>
-                <a href="<?= $item['link'] ?>">
-                  <?= $item['title'] ?>
-                </a>
+            <div class="csc-content">
+              <h3 class="csc-title">
+                <a href="<?= $item['link'] ?>"><?= $item['title'] ?></a>
               </h3>
-
-              <a href="<?= $item['link'] ?>" class="branch-btn">
+              <a href="<?= $item['link'] ?>" class="csc-btn">
                 View Details <i class="fas fa-arrow-right"></i>
               </a>
             </div>
@@ -46,98 +41,138 @@
           </div>
 
         </div>
-        <?php endforeach; ?>
-
-      </div>
+      <?php endforeach; ?>
 
     </div>
-  </section>
+
+  </div>
+</section>
 
 </main>
 
 <style>
- 
+  /* ===== TIGHT CLASSIC STATE CARD ===== */
+  .classic-state-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #edf2f7;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-/* ===== BRANCH CARD ===== */
-.branch-card {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
-  transition: 0.3s;
-  height: 100%;
-}
+  .classic-state-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(3, 43, 105, 0.1);
+    border-bottom: 3px solid #ff6a00;
+    /* vibrant orange anchor */
+  }
 
-.branch-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.1);
-}
+  .csc-img {
+    width: 100%;
+    height: 120px;
+    /* Much smaller image height */
+    overflow: hidden;
+    position: relative;
+  }
 
-/* IMAGE */
-.branch-img {
-  position: relative;
-  height: 180px;
-  overflow: hidden;
-}
+  .csc-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
 
-.branch-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.4s;
-}
+  .classic-state-card:hover .csc-img img {
+    transform: scale(1.08);
+  }
 
-.branch-card:hover img {
-  transform: scale(1.1);
-}
+  .csc-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, rgba(3, 43, 105, 0.3));
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
 
-/* OVERLAY */
-.branch-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
-}
+  .classic-state-card:hover .csc-overlay {
+    opacity: 1;
+  }
 
-/* CONTENT */
-.branch-content {
-  padding: 18px;
-}
+  .csc-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff6a00;
+    /* Vibrant Orange Background */
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    z-index: 2;
+    box-shadow: 0 2px 6px rgba(255, 106, 0, 0.4);
+  }
 
-.branch-location {
-  font-size: 12px;
-  color: #16a34a;
-  font-weight: 600;
-  text-transform: uppercase;
-}
+  .csc-content {
+    padding: 12px 15px;
+    /* Tighter padding */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: linear-gradient(to bottom, #ffffff, #f8fafc);
+    /* Subtle blue tint */
+  }
 
-.branch-content h3 {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 5px 0 12px;
-}
+  .csc-title {
+    font-size: 14px;
+    /* Smaller, cleaner title */
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 5px 0 12px 0;
+  }
 
-.branch-content h3 a {
-  color: #0f172a;
-  text-decoration: none;
-}
+  .csc-title a {
+    color: #032b69;
+    /* Brand Blue Native */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
-/* BUTTON */
-.branch-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #ff6a00;
-  text-decoration: none;
-  transition: 0.3s;
-}
+  .classic-state-card:hover .csc-title a {
+    color: #ff6a00;
+    /* Turn orange on hover */
+  }
 
-.branch-btn i {
-  transition: 0.3s;
-}
+  .csc-btn {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    /* Sleek grey */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
-.branch-btn:hover i {
-  transform: translateX(4px);
-}
+  .csc-btn i {
+    font-size: 10px;
+    transition: transform 0.3s;
+  }
+
+  .classic-state-card:hover .csc-btn {
+    color: #032b69;
+  }
+
+  .classic-state-card:hover .csc-btn i {
+    transform: translateX(4px);
+  }
 </style>

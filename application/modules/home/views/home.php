@@ -12,3 +12,5 @@
 
 <!-- Premium Faqs Section -->
 <?php $this->load->view('faq_widget.php'); ?>
+<!-- Include States Grid at the bottom so they can navigate -->
+<?php $this->load->view('packers_movers/states_widget'); ?>
