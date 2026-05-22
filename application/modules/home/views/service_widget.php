@@ -48,7 +48,7 @@
             </p>
 
             <!-- Know More Link -->
-            <a href="<?= base_url('services') ?>" class="service-more-link mb-3">
+            <a href="<?= site_url('services') ?>" class="service-more-link mb-3">
               Know More <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -78,7 +78,7 @@
             </p>
 
             <!-- Know More Link -->
-            <a href="<?= base_url('services') ?>" class="service-more-link mb-3">
+            <a href="<?= site_url('services') ?>" class="service-more-link mb-3">
               Know More <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -107,7 +107,7 @@
             </p>
 
             <!-- Know More Link -->
-            <a href="<?= base_url('services') ?>" class="service-more-link mb-3">
+            <a href="<?= site_url('services') ?>" class="service-more-link mb-3">
               Know More <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -136,7 +136,7 @@
             </p>
 
             <!-- Know More Link -->
-            <a href="<?= base_url('services') ?>" class="service-more-link mb-3">
+            <a href="<?= site_url('services') ?>" class="service-more-link mb-3">
               Know More <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -165,7 +165,7 @@
             </p>
 
             <!-- Know More Link -->
-            <a href="<?= base_url('services') ?>" class="service-more-link mb-3">
+            <a href="<?= site_url('services') ?>" class="service-more-link mb-3">
               Know More <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -194,7 +194,7 @@
             </p>
 
             <!-- Know More Link -->
-            <a href="<?= base_url('services') ?>" class="service-more-link mb-3">
+            <a href="<?= site_url('services') ?>" class="service-more-link mb-3">
               Know More <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -223,7 +223,7 @@
             </p>
 
             <!-- Know More Link -->
-            <a href="<?= base_url('services') ?>" class="service-more-link mb-3">
+            <a href="<?= site_url('services') ?>" class="service-more-link mb-3">
               Know More <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -252,7 +252,7 @@
             </p>
 
             <!-- Know More Link -->
-            <a href="<?= base_url('services') ?>" class="service-more-link mb-3">
+            <a href="<?= site_url('services') ?>" class="service-more-link mb-3">
               Know More <i class="bi bi-arrow-right"></i>
             </a>
           </div>

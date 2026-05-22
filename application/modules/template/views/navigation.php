@@ -40,33 +40,43 @@
             <nav class="desktop-nav">
               <ul class="desktop-menu">
                 <li class="menu-item active">
-                  <a href="<?= base_url() ?>">HOME</a>
-                </li>
-                <li class="menu-item">
-                  <a href="<?= base_url('about') ?>">ABOUT</a>
+                  <a href="<?= site_url() ?>">HOME</a>
                 </li>
                 <li class="menu-item has-dropdown">
-                  <a href="<?= base_url('services') ?>" class="dropdown-toggle-link">
+                  <a href="<?= site_url('about') ?>" class="dropdown-toggle-link">
+                    ABOUT US <i class="bi bi-chevron-down dropdown-arrow"></i>
+                  </a>
+                  <ul class="dropdown-menu-list">
+                    <li><a href="<?= site_url('about') ?>">About Us</a></li>
+                    <li><a href="<?= site_url('why-choose-us') ?>">Why Choose Us</a></li>
+                    <li><a href="<?= site_url('faqs') ?>">FAQs</a></li>
+                    <li><a href="<?= site_url('moving-tips') ?>">Moving Tips</a></li>
+                    <li><a href="<?= site_url('terms-conditions') ?>">Terms &amp; Conditions</a></li>
+                    <li><a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item has-dropdown">
+                  <a href="<?= site_url('services') ?>" class="dropdown-toggle-link">
                     SERVICES <i class="bi bi-chevron-down dropdown-arrow"></i>
                   </a>
                   <ul class="dropdown-menu-list">
-                    <li><a href="<?= base_url('packers-movers') ?>">Packers &amp; Movers</a></li>
-                    <li><a href="<?= base_url('services/home-shifting') ?>">Home Shifting</a></li>
-                    <li><a href="<?= base_url('services/office-shifting') ?>">Office Shifting</a></li>
-                    <li><a href="<?= base_url('services/car-transportation') ?>">Car Transportation</a></li>
-                    <li><a href="<?= base_url('services/packing-unpacking') ?>">Packing &amp; Unpacking</a></li>
-                    <li><a href="<?= base_url('services/loading-unloading') ?>">Loading &amp; Unloading</a></li>
-                    <li><a href="<?= base_url('services/storage-solutions') ?>">Storage Solutions</a></li>
+                    <li><a href="<?= site_url('packers-movers') ?>">Packers &amp; Movers</a></li>
+                    <li><a href="<?= site_url('services/home-shifting') ?>">Home Shifting</a></li>
+                    <li><a href="<?= site_url('services/office-shifting') ?>">Office Shifting</a></li>
+                    <li><a href="<?= site_url('services/car-transportation') ?>">Car Transportation</a></li>
+                    <li><a href="<?= site_url('services/packing-unpacking') ?>">Packing &amp; Unpacking</a></li>
+                    <li><a href="<?= site_url('services/loading-unloading') ?>">Loading &amp; Unloading</a></li>
+                    <li><a href="<?= site_url('services/storage-solutions') ?>">Storage Solutions</a></li>
                   </ul>
                 </li>
                 <li class="menu-item">
-                  <a href="<?= base_url('process') ?>">LOCATIONS</a>
+                  <a href="<?= site_url('process') ?>">LOCATIONS</a>
                 </li>
                 <li class="menu-item">
-                  <a href="<?= base_url('gallery') ?>">GALLERY</a>
+                  <a href="<?= site_url('gallery') ?>">GALLERY</a>
                 </li>
                 <li class="menu-item">
-                  <a href="<?= base_url('contacts') ?>">CONTACT</a>
+                  <a href="<?= site_url('contacts') ?>">CONTACT</a>
                 </li>
               </ul>
             </nav>
@@ -107,16 +117,24 @@
     <div class="drawer-body">
       <ul class="drawer-menu-list">
         <li class="drawer-menu-item active">
-          <a href="<?= base_url() ?>">
+          <a href="<?= site_url() ?>">
             <span class="drawer-item-left"><i class="bi bi-house-door-fill"></i>HOME</span>
             <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
         </li>
-        <li class="drawer-menu-item">
-          <a href="<?= base_url('about') ?>">
+        <li class="drawer-menu-item has-submenu">
+          <div class="drawer-item-toggle" id="drawerAboutToggle">
             <span class="drawer-item-left"><i class="bi bi-person-fill"></i>ABOUT US</span>
-            <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
-          </a>
+            <span class="drawer-item-right"><i class="bi bi-chevron-down drawer-submenu-arrow"></i></span>
+          </div>
+          <ul class="drawer-submenu-list" id="drawerAboutSubmenu">
+            <li><a href="<?= site_url('about') ?>">About Us</a></li>
+            <li><a href="<?= site_url('why-choose-us') ?>">Why Choose Us</a></li>
+            <li><a href="<?= site_url('faqs') ?>">FAQs</a></li>
+            <li><a href="<?= site_url('moving-tips') ?>">Moving Tips</a></li>
+            <li><a href="<?= site_url('terms-conditions') ?>">Terms &amp; Conditions</a></li>
+            <li><a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a></li>
+          </ul>
         </li>
         
         <li class="drawer-menu-item has-submenu">
@@ -125,36 +143,36 @@
             <span class="drawer-item-right"><i class="bi bi-chevron-down drawer-submenu-arrow"></i></span>
           </div>
           <ul class="drawer-submenu-list" id="drawerSubmenu">
-            <li><a href="<?= base_url('packers-movers') ?>">Packers &amp; Movers</a></li>
-            <li><a href="<?= base_url('services/home-shifting') ?>">Home Shifting</a></li>
-            <li><a href="<?= base_url('services/office-shifting') ?>">Office Shifting</a></li>
-            <li><a href="<?= base_url('services/car-transportation') ?>">Car Transportation</a></li>
-            <li><a href="<?= base_url('services/packing-unpacking') ?>">Packing &amp; Unpacking</a></li>
-            <li><a href="<?= base_url('services/loading-unloading') ?>">Loading &amp; Unloading</a></li>
-            <li><a href="<?= base_url('services/storage-solutions') ?>">Storage Solutions</a></li>
+            <li><a href="<?= site_url('packers-movers') ?>">Packers &amp; Movers</a></li>
+            <li><a href="<?= site_url('services/home-shifting') ?>">Home Shifting</a></li>
+            <li><a href="<?= site_url('services/office-shifting') ?>">Office Shifting</a></li>
+            <li><a href="<?= site_url('services/car-transportation') ?>">Car Transportation</a></li>
+            <li><a href="<?= site_url('services/packing-unpacking') ?>">Packing &amp; Unpacking</a></li>
+            <li><a href="<?= site_url('services/loading-unloading') ?>">Loading &amp; Unloading</a></li>
+            <li><a href="<?= site_url('services/storage-solutions') ?>">Storage Solutions</a></li>
           </ul>
         </li>
 
         <li class="drawer-menu-item">
-          <a href="<?= base_url('process') ?>">
+          <a href="<?= site_url('process') ?>">
             <span class="drawer-item-left"><i class="bi bi-gear-fill"></i>OUR PROCESS</span>
             <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
         </li>
         <li class="drawer-menu-item">
-          <a href="<?= base_url('gallery') ?>">
+          <a href="<?= site_url('gallery') ?>">
             <span class="drawer-item-left"><i class="bi bi-image-fill"></i>GALLERY</span>
             <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
         </li>
         <li class="drawer-menu-item">
-          <a href="<?= base_url('blog') ?>">
+          <a href="<?= site_url('blog') ?>">
             <span class="drawer-item-left"><i class="bi bi-file-earmark-text-fill"></i>BLOG</span>
             <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
         </li>
         <li class="drawer-menu-item">
-          <a href="<?= base_url('contacts') ?>">
+          <a href="<?= site_url('contacts') ?>">
             <span class="drawer-item-left"><i class="bi bi-telephone-fill"></i>CONTACT US</span>
             <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
@@ -177,7 +195,7 @@
     $(function () {
       $('#hamburgerBtn').click(() => $('#fullscreenMenu, #menuOverlay').addClass('active'));
       $('#closeMenuBtn, #menuOverlay').click(() => $('#fullscreenMenu, #menuOverlay').removeClass('active'));
-      $('#drawerServicesToggle').click(function (e) {
+      $('#drawerServicesToggle, #drawerAboutToggle').click(function (e) {
         e.preventDefault();
         $(this).closest('.has-submenu').toggleClass('open');
       });

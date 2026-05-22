@@ -42,13 +42,13 @@
           <div class="col-lg-2 col-md-6 col-sm-6 footer-column-menu">
             <h4 class="footer-title-header">COMPANY</h4>
             <ul class="footer-links-list">
-              <li><a href="<?= base_url() ?>"><i class="bi bi-chevron-right"></i>Home</a></li>
-              <li><a href="<?= base_url('about') ?>"><i class="bi bi-chevron-right"></i>About Us</a></li>
-              <li><a href="<?= base_url('services') ?>"><i class="bi bi-chevron-right"></i>Our Services</a></li>
-              <li><a href="<?= base_url('process') ?>"><i class="bi bi-chevron-right"></i>Our Process</a></li>
-              <li><a href="<?= base_url('gallery') ?>"><i class="bi bi-chevron-right"></i>Gallery</a></li>
-              <li><a href="<?= base_url('blog') ?>"><i class="bi bi-chevron-right"></i>Blog</a></li>
-              <li><a href="<?= base_url('contacts') ?>"><i class="bi bi-chevron-right"></i>Contact Us</a></li>
+              <li><a href="<?= site_url() ?>"><i class="bi bi-chevron-right"></i>Home</a></li>
+              <li><a href="<?= site_url('about') ?>"><i class="bi bi-chevron-right"></i>About Us</a></li>
+              <li><a href="<?= site_url('services') ?>"><i class="bi bi-chevron-right"></i>Our Services</a></li>
+              <li><a href="<?= site_url('process') ?>"><i class="bi bi-chevron-right"></i>Our Process</a></li>
+              <li><a href="<?= site_url('gallery') ?>"><i class="bi bi-chevron-right"></i>Gallery</a></li>
+              <li><a href="<?= site_url('blog') ?>"><i class="bi bi-chevron-right"></i>Blog</a></li>
+              <li><a href="<?= site_url('contacts') ?>"><i class="bi bi-chevron-right"></i>Contact Us</a></li>
             </ul>
           </div>
 
@@ -56,14 +56,14 @@
           <div class="col-lg-2 col-md-6 col-sm-6 footer-column-menu">
             <h4 class="footer-title-header">OUR SERVICES</h4>
             <ul class="footer-links-list">
-              <li><a href="<?= base_url('services/home-shifting') ?>"><i class="bi bi-chevron-right"></i>Household Shifting</a></li>
-              <li><a href="<?= base_url('services/office-shifting') ?>"><i class="bi bi-chevron-right"></i>Office Relocation</a></li>
-              <li><a href="<?= base_url('services/car-transportation') ?>"><i class="bi bi-chevron-right"></i>Vehicle Transport</a></li>
-              <li><a href="<?= base_url('services/packing-unpacking') ?>"><i class="bi bi-chevron-right"></i>Packing &amp; Unpacking</a></li>
-              <li><a href="<?= base_url('services/loading-unloading') ?>"><i class="bi bi-chevron-right"></i>Loading &amp; Unloading</a></li>
-              <li><a href="<?= base_url('services/storage-solutions') ?>"><i class="bi bi-chevron-right"></i>Storage Solutions</a></li>
-              <li><a href="<?= base_url('packers-movers') ?>"><i class="bi bi-chevron-right"></i>Local Shifting</a></li>
-              <li><a href="<?= base_url('packers-movers') ?>"><i class="bi bi-chevron-right"></i>Domestic Shifting</a></li>
+              <li><a href="<?= site_url('services/home-shifting') ?>"><i class="bi bi-chevron-right"></i>Household Shifting</a></li>
+              <li><a href="<?= site_url('services/office-shifting') ?>"><i class="bi bi-chevron-right"></i>Office Relocation</a></li>
+              <li><a href="<?= site_url('services/car-transportation') ?>"><i class="bi bi-chevron-right"></i>Vehicle Transport</a></li>
+              <li><a href="<?= site_url('services/packing-unpacking') ?>"><i class="bi bi-chevron-right"></i>Packing &amp; Unpacking</a></li>
+              <li><a href="<?= site_url('services/loading-unloading') ?>"><i class="bi bi-chevron-right"></i>Loading &amp; Unloading</a></li>
+              <li><a href="<?= site_url('services/storage-solutions') ?>"><i class="bi bi-chevron-right"></i>Storage Solutions</a></li>
+              <li><a href="<?= site_url('packers-movers') ?>"><i class="bi bi-chevron-right"></i>Local Shifting</a></li>
+              <li><a href="<?= site_url('packers-movers') ?>"><i class="bi bi-chevron-right"></i>Domestic Shifting</a></li>
             </ul>
           </div>
 
@@ -71,11 +71,11 @@
           <div class="col-lg-2 col-md-6 col-sm-6 footer-column-menu">
             <h4 class="footer-title-header">USEFUL LINKS</h4>
             <ul class="footer-links-list">
-              <li><a href="<?= base_url('about') ?>"><i class="bi bi-chevron-right"></i>Why Choose Us</a></li>
-              <li><a href="<?= base_url('about') ?>"><i class="bi bi-chevron-right"></i>FAQs</a></li>
-              <li><a href="<?= base_url('process') ?>"><i class="bi bi-chevron-right"></i>Moving Tips</a></li>
-              <li><a href="<?= base_url('process') ?>"><i class="bi bi-chevron-right"></i>Terms &amp; Conditions</a></li>
-              <li><a href="<?= base_url('process') ?>"><i class="bi bi-chevron-right"></i>Privacy Policy</a></li>
+              <li><a href="<?= site_url('why-choose-us') ?>"><i class="bi bi-chevron-right"></i>Why Choose Us</a></li>
+              <li><a href="<?= site_url('faqs') ?>"><i class="bi bi-chevron-right"></i>FAQs</a></li>
+              <li><a href="<?= site_url('moving-tips') ?>"><i class="bi bi-chevron-right"></i>Moving Tips</a></li>
+              <li><a href="<?= site_url('terms-conditions') ?>"><i class="bi bi-chevron-right"></i>Terms &amp; Conditions</a></li>
+              <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-chevron-right"></i>Privacy Policy</a></li>
             </ul>
           </div>
 
@@ -188,11 +188,11 @@
         </div>
         
         <div class="bottom-links-menu">
-          <a href="<?= base_url('process') ?>">Sitemap</a>
+          <a href="<?= site_url('process') ?>">Sitemap</a>
           <span class="bottom-menu-sep">|</span>
-          <a href="<?= base_url('process') ?>">Terms &amp; Conditions</a>
+          <a href="<?= site_url('terms-conditions') ?>">Terms &amp; Conditions</a>
           <span class="bottom-menu-sep">|</span>
-          <a href="<?= base_url('process') ?>">Privacy Policy</a>
+          <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
         </div>
 
         <!-- Silhouette delivery truck outline graphic -->
