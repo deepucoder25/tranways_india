@@ -2,7 +2,7 @@
     <div class="contact-form-header">
         <div class="row">
             <div class="col-12">
-                <h5><small style="font-weight:400;font-size:13px;">Request a Free Quote Today!</small> <a href="<?= $phonehtml ?>" style='color:white;float:right;'><i class="far fa-phone-volume"></i> <?= $phone ?></a></h5>
+                <h5><small class="quote-header-subtitle">Request a Free Quote Today!</small> <a href="<?= $phonehtml ?>" class="quote-header-phone"><i class="far fa-phone-volume"></i> <?= $phone ?></a></h5>
             </div>
         </div>
     </div>
@@ -57,8 +57,8 @@
             </div>
         </div>
             <div id="resultquotefrom"></div>
-        <button id="submitbquoteform" type="submit" class="theme-btn" style="background-color:#FBA707;">Submit <i class="far fa-paper-plane"></i></button>
-        <button onclick="$('#resultquotefrom').html('');"  type="reset" class="theme-btn" style="background-color:white;color:#A0A0A0;">Clear <i class="far fa-trash-alt"></i></button>
+        <button id="submitbquoteform" type="submit" class="theme-btn btn-submit-quote">Submit <i class="far fa-paper-plane"></i></button>
+        <button onclick="$('#resultquotefrom').html('');"  type="reset" class="theme-btn btn-reset-quote">Clear <i class="far fa-trash-alt"></i></button>
     </form>
 </div>
 <script type="text/javascript">
@@ -69,14 +69,14 @@
                 url: "<?php echo site_url('contacts/booking') ?>",
                 data: $("#quoteform").serialize(),
                 beforeSend: function() {
-                    $('#resultquotefrom').html('<p style="color:red">Please wait...</p>');
+                    $('#resultquotefrom').html('<p class="text-danger fw-bold">Please wait...</p>');
                 },
                 success: function(data) {
                     $('#resultquotefrom').empty();
                     if (data == '1') {
-                        data = "<div class='alert alert-success'><p style='color:green;'>Thank you! Your quote request successfully submitted. We'll respond soon.</p></div>";
+                        data = "<div class='alert alert-success'><p class='text-success fw-bold mb-0'>Thank you! Your quote request successfully submitted. We'll respond soon.</p></div>";
                         $("#quoteform").trigger('reset');
-                        <!-- Event snippet for Phone call lead conversion page -->
+                        // Event snippet for Phone call lead conversion page
                         gtag('event', 'conversion', {'send_to': 'AW-16778879117/JlJPCPjgvOwZEI3B5cA-'});
                     }
                     $('#resultquotefrom').html(data);

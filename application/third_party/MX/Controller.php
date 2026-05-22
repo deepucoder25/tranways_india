@@ -51,13 +51,13 @@ class MX_Controller
         $this->load = clone load_class('Loader');
         $this->load->initialize($this);
 
-        $this->comp['phone'] = '+91 123456789';
-        $this->comp['phonehtml'] = 'tel:+91 123456789';
+        $this->comp['phone'] = '+91 9742680005';
+        $this->comp['phonehtml'] = 'tel:+91 9742680005';
         $this->comp['supportmail'] = 'support@packersandmovers.in';
         $this->comp['replyToMail'] = 'info@packersandmovers.in';
-        $this->comp['mail'] = 'info@packersandmovers.com';
-        $this->comp['mailhtml'] = "mailto:info@packersandmovers.com";
-        $this->comp['company3'] = 'Packers and Movers';
+        $this->comp['mail'] = 'sandeepkumar80005a@gmail.com';
+        $this->comp['mailhtml'] = "mailto:sandeepkumar80005a@gmail.com";
+        $this->comp['company3'] = 'Transways India Packers and Movers';
         $this->comp['companydomain'] = 'groveus.com';
 
         $this->comp['facebookhtml'] = "";
@@ -67,20 +67,20 @@ class MX_Controller
         $this->comp['linkedinhtml'] = "";
         $this->comp['whatsapphtml'] = "";
 
-        $this->comp['address'] = "1st floor Road No 1 Near Bank of India Ramkrishna Nagar Patna (800027)";
-        $this->comp['address1'] = "1st floor Road No 1 Near Bank of India";
-        $this->comp['address2'] = "Ramkrishna Nagar Patna";
-        $this->comp['addressRegion'] = "Patna";
-        $this->comp['postalCode'] = "800027";
-        $this->comp['companystate'] = "Bihar";
-        $this->comp['themeColor'] = "#e21b22";
+        $this->comp['address'] = "No.402 ,3rd Floor,Aecs layout road, opp Shiva Temple,kudlu, Bommanahalli post , Bangalore-560068, Karnataka";
+        $this->comp['address1'] = "No.402,3rd Floor,Aecs layout road, opp Shiva Temple,kudlu";
+        $this->comp['address2'] = "Bangalore-560068, Karnataka";
+        $this->comp['addressRegion'] = "Karnataka";
+        $this->comp['postalCode'] = "560068";
+        $this->comp['companystate'] = "Karnataka";
+        $this->comp['themeColor'] = "#0033a0";
 
         $this->comp['sku'] = "PM281050";
         $this->comp['mpn'] = "JPM281050";
         // Review
         $this->comp['ratingValue'] = "4.8";
         $this->comp['ratingCount'] = "2889";
-        $this->comp['datePublished'] = "23 october, 2035";
+        $this->comp['datePublished'] = "19 May, 2026";
         $this->comp['reviewBody'] = "Packers and Movers provided excellent service with their IBA-approved goods insurance. My items were securely moved, affordable, and stress-free.";
         $this->comp['reviewperson'] = "Aman Kumar";
 
