@@ -1,3 +1,4 @@
+﻿<?php $this->load->view('template/inner_hero', ['page_title' => 'Blog']); ?>
 <?php
 // Ensure no output or whitespace before this PHP block
 $this->load->database();
@@ -104,3 +105,4 @@ $this->load->database();
 <script type="application/ld+json">
 <?= json_encode($schemaData, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
 </script>
+

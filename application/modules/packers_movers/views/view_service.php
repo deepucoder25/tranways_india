@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $this->load->database();
 $this->load->helper('text');
 $st = strtolower(str_replace(" ", "-", $state));

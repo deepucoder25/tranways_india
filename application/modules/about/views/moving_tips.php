@@ -1,16 +1,4 @@
-<!-- Inner Page Hero Banner -->
-<section class="inner-hero-banner position-relative overflow-hidden text-center py-5">
-  <div class="hero-overlay"></div>
-  <div class="hero-grid-pattern"></div>
-  <div class="container position-relative z-index-2 py-4">
-    <h1 class="text-white text-uppercase font-weight-bold mb-3">Expert Moving Tips</h1>
-    <div class="custom-breadcrumb d-flex justify-content-center align-items-center gap-2">
-      <a href="<?= site_url() ?>" class="breadcrumb-link text-white-50"><i class="bi bi-house-door-fill me-1"></i>Home</a>
-      <span class="breadcrumb-sep text-white-50"><i class="bi bi-chevron-right"></i></span>
-      <span class="breadcrumb-active text-orange font-weight-semibold">Moving Tips</span>
-    </div>
-  </div>
-</section>
+﻿<?php $this->load->view('template/inner_hero', ['page_title' => 'Expert Moving Tips', 'parent_title' => 'About Us', 'parent_link' => 'about']); ?>
 
 <!-- Moving Tips Section -->
 <section class="moving-tips-page py-5">
@@ -41,7 +29,7 @@
           
           <!-- Quick Packing Pro Tips -->
           <div class="pro-tips-card shadow-sm p-4 rounded-4 bg-white border border-light">
-            <span class="section-subtitle-badge mb-2 d-inline-block">— • PRO PACKING TIPS • —</span>
+            <span class="section-subtitle-badge mb-2 d-inline-block">â€” â€¢ PRO PACKING TIPS â€¢ â€”</span>
             <h4 class="pro-tips-heading text-blue mb-3">Smart Shifting Habits</h4>
             
             <div class="pro-tip-item mb-3">
@@ -64,7 +52,7 @@
       <!-- Right Column: Timeline Chronological Checklist Guide -->
       <div class="col-lg-8">
         <div class="timeline-checklist-wrapper">
-          <span class="section-subtitle-badge">— • CHRONOLOGICAL CHECKLIST • —</span>
+          <span class="section-subtitle-badge">â€” â€¢ CHRONOLOGICAL CHECKLIST â€¢ â€”</span>
           <h2 class="checklist-main-title mt-2 mb-4">Your Complete Step-by-Step <span class="text-orange">Relocation Roadmap</span></h2>
           <p class="text-muted mb-5">
             Planning ahead simplifies relocation. Follow our master checklist schedule to stay fully organized, calm, and prepared before our moving crew arrives.
@@ -171,3 +159,4 @@
     </div>
   </div>
 </section>
+

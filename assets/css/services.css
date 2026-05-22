@@ -1,0 +1,227 @@
+/* ==========================================================================
+   SERVICES CUSTOM CSS
+   ========================================================================== */
+
+/* Overrides for specific colors if not in style.css */
+.text-primary-blue { color: var(--primary-blue); }
+.bg-primary-blue { background-color: var(--primary-blue); }
+.text-orange { color: var(--primary-orange); }
+.bg-orange { background-color: var(--primary-orange); }
+
+/* Buttons */
+.btn-primary-orange {
+  background-color: var(--primary-orange);
+  color: var(--white);
+  border: 2px solid var(--primary-orange);
+  transition: all 0.3s ease;
+}
+.btn-primary-orange:hover {
+  background-color: transparent;
+  color: var(--primary-orange);
+}
+
+/* Sidebar Layout Additions */
+.border-primary-orange { border-color: var(--primary-orange) !important; }
+.bg-orange-light { background-color: rgba(243, 112, 33, 0.1); }
+.bg-blue-light { background-color: rgba(0, 51, 160, 0.1); }
+
+/* Sidebar Services List */
+.hs-services-list li { margin-bottom: 10px; }
+.hs-services-list li:last-child { margin-bottom: 0; }
+.hs-services-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  background-color: #f8f9fa;
+  color: var(--text-dark, #333);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+.hs-services-list a:hover,
+.hs-services-list a.active {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border-left-color: var(--primary-orange);
+  transform: translateX(5px);
+}
+
+/* Premium Household Shifting Overrides */
+.hs-bg-pattern {
+  background-color: #f4f6fb;
+  background-image: radial-gradient(#e0e5f2 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.hs-card-premium {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hs-card-premium:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05) !important;
+}
+
+.hs-premium-badge {
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  background-color: var(--primary-orange);
+  color: white;
+  padding: 8px 20px;
+  font-weight: bold;
+  border-radius: 5px 0 0 5px;
+  box-shadow: -5px 5px 15px rgba(243, 112, 33, 0.3);
+  z-index: 5;
+}
+.hs-premium-badge::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #c45717 transparent transparent #c45717;
+}
+
+.hs-feature-box {
+  transition: all 0.3s ease;
+  border-color: #eee !important;
+}
+.hs-feature-box:hover {
+  background-color: rgba(0, 51, 160, 0.03);
+  border-color: var(--primary-blue) !important;
+}
+
+/* Inner Process Grid */
+.hs-process-box {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.hs-process-box:hover {
+  background-color: #fff !important;
+  border-color: var(--primary-blue);
+  box-shadow: 0 10px 20px rgba(0,51,160,0.08);
+}
+.hs-process-num {
+  position: absolute;
+  right: -10px;
+  bottom: -20px;
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(0,0,0,0.03);
+  line-height: 1;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.hs-process-box:hover .hs-process-num {
+  color: rgba(0, 51, 160, 0.08);
+  transform: scale(1.1);
+}
+
+/* Inner Testimonial & FAQ */
+.hs-reviewer-avatar {
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+}
+.hs-review-card {
+  border-left: 4px solid var(--primary-blue);
+}
+
+.hs-accordion .accordion-button {
+  box-shadow: none !important;
+}
+.hs-accordion .accordion-button:not(.collapsed) {
+  color: var(--primary-blue) !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #eee;
+}
+.hs-accordion .accordion-button::after {
+  background-size: 1rem;
+}
+
+/* Sidebar Details */
+.hs-sidebar-wrapper {
+  padding-left: 15px;
+}
+.hs-help-pattern {
+  top: -20px;
+  right: -20px;
+  transform: rotate(15deg);
+}
+.hs-phone-link {
+  transition: all 0.3s ease;
+}
+.hs-phone-link:hover {
+  transform: scale(1.05);
+  text-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Sidebar Contact Card Animations */
+.hs-animated-ring {
+  display: inline-block;
+  animation: ring 2s ease infinite;
+  transform-origin: center;
+}
+@keyframes ring {
+  0% { transform: rotate(0); }
+  5% { transform: rotate(15deg); }
+  10% { transform: rotate(-10deg); }
+  15% { transform: rotate(15deg); }
+  20% { transform: rotate(-10deg); }
+  25% { transform: rotate(0); }
+  100% { transform: rotate(0); }
+}
+
+.hs-help-icon::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  animation: ripple 2s linear infinite;
+  z-index: -1;
+}
+@keyframes ripple {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.hs-btn-pulse {
+  animation: pulse-shadow 2s infinite;
+}
+@keyframes pulse-shadow {
+  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+
+/* Premium Glassmorphism Breadcrumb */
+.hs-premium-breadcrumb {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.hs-bc-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+.hs-bc-link:hover {
+  color: var(--primary-orange);
+  text-shadow: 0 0 10px rgba(243, 112, 33, 0.5);
+}
+.hs-bc-sep {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
+}
+.hs-bc-active {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}

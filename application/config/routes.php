@@ -14,6 +14,8 @@ $route["moving-tips"]="about/moving_tips";
 $route["terms-conditions"]="about/terms";
 $route["privacy-policy"]="about/privacy";
 $route["contacts"]="contacts/contacts";
+
+$route['location'] = 'packers_movers/state';
 $route["packers-movers-(:any)-india"]="packers_movers/state_services/$1";
 $route["(:any)-packers-movers-(:any)"]="packers_movers/city/$2/$1";
 $route["bihar"]="packers_movers/state_services/bihar";
@@ -29,5 +31,10 @@ $route["services/loading-unloading"] = "services/loading_unloading";
 $route["services/storage-solutions"] = "services/storage_solutions";
 $route["services/local-shifting"] = "services/local_shifting";
 $route["services/domestic-shifting"] = "services/domestic_shifting";
+
+$route["gallery"] = "gallery/photo_gallery";
+$route["branches"] = "packers_movers/state";
+$route["blog"] = "blog/index";
+$route["process"] = "process/index";
 
 $route['translate_uri_dashes'] = TRUE;

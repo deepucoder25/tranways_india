@@ -1,4 +1,6 @@
 @import "navigation.css";
+@import "about_pages.css";
+@import "services.css";
 @import "footer.css";
 @import "slider.css";
 @import "home.css";
@@ -596,4 +598,48 @@ body {
 
 .safety-badge {
   border-width: 1px;
+}
+
+/* Decorative Animated Circles in Hero Banner */
+.about-anim-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  animation: floatCircle 8s infinite alternate ease-in-out;
+}
+
+.about-anim-circle-1 {
+  width: 150px;
+  height: 150px;
+  top: -50px;
+  left: 10%;
+  animation-duration: 6s;
+}
+
+.about-anim-circle-2 {
+  width: 80px;
+  height: 80px;
+  bottom: 20px;
+  left: 20%;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  background: rgba(243, 112, 33, 0.1);
+  border-color: rgba(243, 112, 33, 0.2);
+}
+
+.about-anim-circle-3 {
+  width: 200px;
+  height: 200px;
+  top: 30%;
+  right: 5%;
+  animation-duration: 10s;
+  animation-delay: 1s;
+}
+
+@keyframes floatCircle {
+  0% { transform: translateY(0) scale(1); opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-40px) scale(1.1); opacity: 0.5; }
 }

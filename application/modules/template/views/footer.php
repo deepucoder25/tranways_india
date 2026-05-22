@@ -1,4 +1,4 @@
-  <!-- ==================== FOOTER SECTION ==================== -->
+﻿  <!-- ==================== FOOTER SECTION ==================== -->
   <footer class="main-footer">
     
    
@@ -45,7 +45,7 @@
               <li><a href="<?= site_url() ?>"><i class="bi bi-chevron-right"></i>Home</a></li>
               <li><a href="<?= site_url('about') ?>"><i class="bi bi-chevron-right"></i>About Us</a></li>
               <li><a href="<?= site_url('services') ?>"><i class="bi bi-chevron-right"></i>Our Services</a></li>
-              <li><a href="<?= site_url('process') ?>"><i class="bi bi-chevron-right"></i>Our Process</a></li>
+              <li><a href="<?= site_url('location') ?>"><i class="bi bi-chevron-right"></i>Location</a></li>
               <li><a href="<?= site_url('gallery') ?>"><i class="bi bi-chevron-right"></i>Gallery</a></li>
               <li><a href="<?= site_url('blog') ?>"><i class="bi bi-chevron-right"></i>Blog</a></li>
               <li><a href="<?= site_url('contacts') ?>"><i class="bi bi-chevron-right"></i>Contact Us</a></li>

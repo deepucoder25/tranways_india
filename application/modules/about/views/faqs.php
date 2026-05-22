@@ -1,16 +1,4 @@
-<!-- Inner Page Hero Banner -->
-<section class="inner-hero-banner position-relative overflow-hidden text-center py-5">
-  <div class="hero-overlay"></div>
-  <div class="hero-grid-pattern"></div>
-  <div class="container position-relative z-index-2 py-4">
-    <h1 class="text-white text-uppercase font-weight-bold mb-3">Frequently Asked Questions</h1>
-    <div class="custom-breadcrumb d-flex justify-content-center align-items-center gap-2">
-      <a href="<?= site_url() ?>" class="breadcrumb-link text-white-50"><i class="bi bi-house-door-fill me-1"></i>Home</a>
-      <span class="breadcrumb-sep text-white-50"><i class="bi bi-chevron-right"></i></span>
-      <span class="breadcrumb-active text-orange font-weight-semibold">FAQs</span>
-    </div>
-  </div>
-</section>
+﻿<?php $this->load->view('template/inner_hero', ['page_title' => 'Frequently Asked Questions', 'parent_title' => 'About Us', 'parent_link' => 'about']); ?>
 
 <!-- FAQs Content Grid Section -->
 <section class="faqs-page-section py-5">
@@ -20,7 +8,7 @@
       <!-- Left Sidebar: Category Info & Search Placeholder -->
       <div class="col-lg-4">
         <div class="faq-sidebar-card shadow-sm p-4 rounded-4 bg-white border border-light sticky-top" style="top: 100px; z-index: 10;">
-          <span class="section-subtitle-badge mb-3 d-inline-block">— • HAVE QUESTIONS? • —</span>
+          <span class="section-subtitle-badge mb-3 d-inline-block">â€” â€¢ HAVE QUESTIONS? â€¢ â€”</span>
           <h2 class="sidebar-faq-title mb-3">Answers to All Your Shifting <span class="text-orange">Queries</span></h2>
           <p class="text-muted mb-4">
             We have compiled answers to the most common queries regarding home shifting, vehicle transportation, insurance, IBA approvals, and safety regulations.
@@ -158,3 +146,4 @@
     </div>
   </div>
 </section>
+

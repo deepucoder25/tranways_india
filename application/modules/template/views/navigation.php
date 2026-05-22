@@ -1,4 +1,4 @@
-<body>
+﻿<body>
   <!-- Quote Modal (Original widget loaded dynamically) -->
   <?php $this->load->view('contacts/quotemodal') ?>
 
@@ -71,7 +71,7 @@
                   </ul>
                 </li>
                 <li class="menu-item">
-                  <a href="<?= site_url('process') ?>">LOCATIONS</a>
+                  <a href="<?= site_url('location') ?>">LOCATIONS</a>
                 </li>
                 <li class="menu-item">
                   <a href="<?= site_url('gallery') ?>">GALLERY</a>
@@ -156,8 +156,8 @@
         </li>
 
         <li class="drawer-menu-item">
-          <a href="<?= site_url('process') ?>">
-            <span class="drawer-item-left"><i class="bi bi-gear-fill"></i>OUR PROCESS</span>
+          <a href="<?= site_url('location') ?>">
+            <span class="drawer-item-left"><i class="bi bi-gear-fill"></i>Location</span>
             <span class="drawer-item-right"><i class="bi bi-chevron-right"></i></span>
           </a>
         </li>

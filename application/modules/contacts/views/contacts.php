@@ -1,3 +1,4 @@
+﻿<?php $this->load->view('template/inner_hero', ['page_title' => 'Contact Us']); ?>
 <section class="breadcrumb-hero" data-animate="bottom" data-delay="1">
     <div class="container">
         <div class="row">

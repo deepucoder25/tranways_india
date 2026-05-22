@@ -1,16 +1,4 @@
-<!-- Inner Page Hero Banner -->
-<section class="inner-hero-banner position-relative overflow-hidden text-center py-5">
-  <div class="hero-overlay"></div>
-  <div class="hero-grid-pattern"></div>
-  <div class="container position-relative z-index-2 py-4">
-    <h1 class="text-white text-uppercase font-weight-bold mb-3">Privacy Policy</h1>
-    <div class="custom-breadcrumb d-flex justify-content-center align-items-center gap-2">
-      <a href="<?= site_url() ?>" class="breadcrumb-link text-white-50"><i class="bi bi-house-door-fill me-1"></i>Home</a>
-      <span class="breadcrumb-sep text-white-50"><i class="bi bi-chevron-right"></i></span>
-      <span class="breadcrumb-active text-orange font-weight-semibold">Privacy Policy</span>
-    </div>
-  </div>
-</section>
+﻿<?php $this->load->view('template/inner_hero', ['page_title' => 'Privacy Policy', 'parent_title' => 'About Us', 'parent_link' => 'about']); ?>
 
 <!-- Privacy Section Wrapper -->
 <section class="legal-page-section py-5">
@@ -35,7 +23,7 @@
       <!-- Right Column: Document Details -->
       <div class="col-lg-9 col-12">
         <div class="legal-content-body shadow-sm p-5 rounded-4 bg-white border border-light">
-          <span class="section-subtitle-badge mb-2 d-inline-block">— • SECURITY COMPLIANCE • —</span>
+          <span class="section-subtitle-badge mb-2 d-inline-block">â€” â€¢ SECURITY COMPLIANCE â€¢ â€”</span>
           <h2 class="legal-main-heading mb-4">Customer Privacy Guidelines</h2>
           
           <div class="alert alert-info border-start border-4 border-blue rounded-3 p-3 mb-4">
@@ -164,3 +152,4 @@
     </div>
   </div>
 </section>
+

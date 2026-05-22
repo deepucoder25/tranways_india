@@ -1,16 +1,4 @@
-<!-- Inner Page Hero Banner -->
-<section class="inner-hero-banner position-relative overflow-hidden text-center py-5">
-  <div class="hero-overlay"></div>
-  <div class="hero-grid-pattern"></div>
-  <div class="container position-relative z-index-2 py-4">
-    <h1 class="text-white text-uppercase font-weight-bold mb-3">About Us</h1>
-    <div class="custom-breadcrumb d-flex justify-content-center align-items-center gap-2">
-      <a href="<?= site_url() ?>" class="breadcrumb-link text-white-50"><i class="bi bi-house-door-fill me-1"></i>Home</a>
-      <span class="breadcrumb-sep text-white-50"><i class="bi bi-chevron-right"></i></span>
-      <span class="breadcrumb-active text-orange font-weight-semibold">About Us</span>
-    </div>
-  </div>
-</section>
+﻿<?php $this->load->view('template/inner_hero', ['page_title' => 'About Us']); ?>
 
 <!-- Our Legacy & Journey Section -->
 <section class="about-legacy-section py-5 position-relative">
@@ -18,7 +6,7 @@
     <div class="row g-5 align-items-center">
       <div class="col-lg-6">
         <div class="legacy-content-wrapper">
-          <span class="section-subtitle-badge">— • OUR JOURNEY & LEGACY • —</span>
+          <span class="section-subtitle-badge">â€” â€¢ OUR JOURNEY & LEGACY â€¢ â€”</span>
           <h2 class="legacy-main-title mt-2 mb-4">Decades of Relocation <span class="text-orange">Trust & Excellence</span></h2>
           <p class="lead text-muted mb-4">
             Founded with a vision to redefine the packing and moving industry in India, <span class="text-orange font-weight-bold">Tranways India Packers and Movers</span> has emerged as one of the nation's most trusted logistics partners. We simplify shifting, turning stressful relocations into seamless transitions.
@@ -99,7 +87,7 @@
 <!-- Our Corporate Core Values -->
 <section class="about-values-section py-5">
   <div class="container text-center">
-    <span class="section-subtitle-badge">— • OUR CORE VALUES • —</span>
+    <span class="section-subtitle-badge">â€” â€¢ OUR CORE VALUES â€¢ â€”</span>
     <h2 class="values-main-title mt-2 mb-5">Pillars of Our <span class="text-orange">Commitment & Care</span></h2>
     
     <div class="row g-4">
@@ -155,7 +143,7 @@
 <section class="about-milestones-section py-5 bg-light position-relative">
   <div class="container">
     <div class="text-center mb-5">
-      <span class="section-subtitle-badge">— • MILESTONES & GROWTH • —</span>
+      <span class="section-subtitle-badge">â€” â€¢ MILESTONES & GROWTH â€¢ â€”</span>
       <h2 class="milestones-main-title mt-2 mb-3">Our Corporate <span class="text-orange">Shifting Milestones</span></h2>
       <p class="lead text-muted max-w-600 mx-auto">
         Tracing the journey of Tranways India from a small logistics startup to a premier PAN-India Packers & Movers leader.
@@ -226,4 +214,5 @@
     </div>
   </div>
 </section>
+
 
