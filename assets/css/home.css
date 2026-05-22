@@ -169,34 +169,180 @@
   text-transform: uppercase;
 }
 
-/* CEO & Brand Promise */
-.about-ceo-name {
-  font-family: 'Georgia', serif;
-  font-style: italic;
-  font-size: 1.6rem;
-  color: var(--primary-blue, #0033a0) !important;
-  letter-spacing: 0.5px;
-}
-
-.about-ceo-title {
-  font-size: 10px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.about-promise-wrapper {
-  border-color: rgba(0, 51, 160, 0.1) !important;
-}
-
-.about-promise-text {
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 500;
-}
-
 /* Responsive Overrides */
 @media (max-width: 991.98px) {
   .collage-container {
     margin-bottom: 40px;
   }
 }
+
+/* PREMIUM SERVICES SECTION (HOME PAGE) */
+
+/* Custom Fluid Responsive Container to align with navbar and hero slider */
+.services-container-custom {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .services-container-custom {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* Section Header styling */
+.services-label-badge {
+  letter-spacing: 1.5px;
+  color: var(--primary-blue, #0033a0) !important;
+}
+
+.services-label-line {
+  display: inline-block;
+  width: 12px;
+  height: 3px;
+  background-color: var(--primary-orange, #f37021);
+}
+
+
+.services-separator {
+  width: 50px;
+  height: 3.5px;
+  background-color: var(--primary-orange, #f37021);
+  border-radius: 5px;
+}
+
+.services-section-desc {
+  font-weight: 500;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Service Card Layout */
+.service-card {
+  position: relative;
+  border-radius: 12px;
+  transition: var(--transition-elastic, all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275));
+  border: 1px solid rgba(0, 51, 160, 0.05) !important;
+}
+
+/* Slide-in gradient bottom border on card hover */
+.service-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; /* Thicker and highly visible premium border */
+  background: linear-gradient(90deg, var(--primary-blue, #0033a0) 0%, var(--primary-orange, #f37021) 100%);
+  transform: scaleX(0);
+  transform-origin: center; /* Elegant expansion from the center */
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  z-index: 10; /* Keep it layered on top of all images and text */
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 51, 160, 0.12), 0 5px 15px rgba(243, 112, 33, 0.06) !important;
+  border-color: rgba(0, 51, 160, 0.1) !important;
+}
+
+.service-card:hover::after {
+  transform: scaleX(1);
+}
+
+/* Icon circle toggles color and enlarges on hover */
+.service-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  background-color: rgba(0, 51, 160, 0.06);
+  color: var(--primary-blue, #0033a0);
+  font-size: 20px;
+  font-weight: 800;
+  transition: var(--transition-elastic, all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275));
+  border: 1px solid rgba(0, 51, 160, 0.1);
+}
+
+.service-card:hover .service-icon-wrapper {
+  background: linear-gradient(135deg, var(--primary-blue, #0033a0) 0%, var(--primary-orange, #f37021) 100%);
+  color: var(--white, #ffffff);
+  border-color: transparent;
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 4px 15px rgba(0, 51, 160, 0.2);
+}
+
+.service-card-title {
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover .service-card-title {
+  color: var(--primary-blue, #0033a0) !important;
+}
+
+.service-card-desc {
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.service-image-container {
+  height: 160px;
+  border-top: 1px solid rgba(0, 51, 160, 0.05);
+}
+
+.service-card-img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.service-card:hover .service-card-img {
+  transform: scale(1.06);
+}
+
+/* Premium Know More Links in Service Cards */
+.service-more-link {
+  color: var(--primary-blue, #0033a0);
+  font-weight: 700;
+  font-size: 13.5px;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-top: auto; /* Push link perfectly to the bottom of the flex card body */
+  position: relative;
+  z-index: 5;
+}
+
+.service-more-link i {
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.service-more-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--primary-orange, #f37021);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.service-more-link:hover {
+  color: var(--primary-orange, #f37021) !important;
+}
+
+.service-more-link:hover::after {
+  transform: scaleX(1);
+}
+
+.service-more-link:hover i {
+  transform: translateX(4px);
+}
+
