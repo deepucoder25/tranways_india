@@ -1,11 +1,4 @@
 <div class="contact-form">
-    <div class="contact-form-header">
-        <div class="row">
-            <div class="col-12">
-                <h5><small class="quote-header-subtitle">Request a Free Quote Today!</small> <a href="<?= $phonehtml ?>" class="quote-header-phone"><i class="far fa-phone-volume"></i> <?= $phone ?></a></h5>
-            </div>
-        </div>
-    </div>
     <form id="quoteform" class="ajax-form" data-url="<?php echo site_url('contacts/booking') ?>" data-result="quoteformresults" onsubmit="return false;">
         <div class="row">
             <div class="col-md-6">

@@ -123,31 +123,3 @@
     </div>
   </div>
 </section>
-
-<script type="text/javascript">
-    $(function () {
-        $('#submitcontactbtn').click(function () {
-            $.ajax({
-                type: "POST",
-                url: "<?php echo site_url('contacts/contact'); ?>", // Update with your endpoint
-                data: $("#getintouchform").serialize(),
-                beforeSend: function () {
-                    $('#resulttouch').html('<p style="color:red">Please wait...</p>');
-                },
-                success: function (data) {
-                    $('#resulttouch').empty();
-                    if (data == '1') {
-                        data = "<div class='alert alert-success'><h4>Success! Your message has been submitted successfully. We will contact you soon.</h4></div>";
-                        $("#getintouchform").trigger('reset');
-                    }
-                    $('#resulttouch').html(data);
-                    setTimeout(function () {
-                        $('#resulttouch').fadeOut('slow', function () {
-                            $(this).empty().show();
-                        });
-                    }, 2000);
-                }
-            });
-        });
-    });
-</script>

@@ -3,7 +3,7 @@ class Contacts extends MX_Controller
 {
     function __construct(){
         parent::__construct();
-     $this->load->database();
+    //  $this->load->database();
     }
     function index()
     {
@@ -32,21 +32,6 @@ class Contacts extends MX_Controller
             echo "<div class='alert alert-danger'>" . validation_errors() . "</div>";
         }
     }
-    function faq()
-    {
-        $this->load->library('form_validation');
-        $this->form_validation->set_rules('name', 'Name', 'required|trim');
-        $this->form_validation->set_rules('phone', 'Mobile', 'required|trim|numeric|exact_length[10]');
-        if ($this->form_validation->run() == true) {
-            $this->load->model('contacts_mdl');
-            $check = $this->contacts_mdl->faq();
-            if ($check == true) {
-          echo "1";
-            }
-        } else {
-            echo "<div class='alert alert-danger'>" . validation_errors() . "</div>";
-        }
-    }
     function contact()
     {
         $this->load->library('form_validation');
@@ -60,21 +45,6 @@ class Contacts extends MX_Controller
             }
         } else {
             echo "<div class='alert alert-danger'>" . validation_errors() . "</div>";
-        }
-    }
-
-    function newsletter()
-    {
-        $this->load->library('form_validation');
-        $this->form_validation->set_rules('email', 'email', 'required|trim');
-        if ($this->form_validation->run() == true) {
-            $this->load->model('contacts_mdl');
-            $check = $this->contacts_mdl->newsletter();
-            if ($check == true) {
-          echo "1";
-            }
-        } else {
-            echo "<div style='background:red !important;'>" . validation_errors() . "</div>";
         }
     }
     
