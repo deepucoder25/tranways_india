@@ -21,5 +21,13 @@ $route["maharashtra"]="packers_movers/state_services/maharashtra";
 $route["delhi"]="packers_movers/state_services/delhi";
 $route["uttarpradesh"]="packers_movers/state_services/uttarpradesh";
 $route["punjab"]="packers_movers/state_services/punjab";
+$route["services/household-shifting"] = "services/household_shifting";
+$route["services/office-relocation"] = "services/office_relocation";
+$route["services/vehicle-transport"] = "services/vehicle_transport";
+$route["services/packing-unpacking"] = "services/packing_unpacking";
+$route["services/loading-unloading"] = "services/loading_unloading";
+$route["services/storage-solutions"] = "services/storage_solutions";
+$route["services/local-shifting"] = "services/local_shifting";
+$route["services/domestic-shifting"] = "services/domestic_shifting";
 
 $route['translate_uri_dashes'] = TRUE;
