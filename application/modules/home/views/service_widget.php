@@ -71,7 +71,7 @@
               <i class="bi bi-building"></i>
             </div>
             
-            <h3 class="text-dark service-card-title mb-2">Office Relocation</h3>
+            <h3 class="text-dark service-card-title mb-2">Office Shifting</h3>
             
             <p class="text-muted service-card-desc mb-3">
               Hassle-free office shifting with minimal downtime and maximum business continuity.
@@ -100,7 +100,7 @@
               <i class="bi bi-truck"></i>
             </div>
             
-            <h3 class="text-dark service-card-title mb-2">Vehicle Transport</h3>
+            <h3 class="text-dark service-card-title mb-2">Vehicle Transportation</h3>
             
             <p class="text-muted service-card-desc mb-3">
               Secure transportation of your cars, bikes, and other vehicles across India safely.
@@ -119,34 +119,7 @@
         </div>
       </div>
 
-      <!-- Card 4: Local Shifting -->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="service-card h-100 bg-white shadow-sm overflow-hidden border border-light d-flex flex-column">
-          
-          <div class="service-card-body text-center p-4 d-flex flex-column align-items-center flex-grow-1">
-            <!-- Icon Wrapper -->
-            <div class="service-icon-wrapper rounded-circle d-flex align-items-center justify-content-center mb-3">
-              <i class="bi bi-geo-alt-fill"></i>
-            </div>
-            
-            <h3 class="text-dark service-card-title mb-2">Local Shifting</h3>
-            
-            <p class="text-muted service-card-desc mb-3">
-              Fast, smooth, and pocket-friendly local relocation services within your city limits.
-            </p>
 
-            <!-- Know More Link -->
-            <a href="<?= site_url('services/local-shifting') ?>" class="service-more-link mb-3">
-              Know More <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-
-          <div class="service-image-container overflow-hidden">
-            <img src="<?= base_url('assets/images/services/service_local.png') ?>" alt="<?=$company3?> Local Shifting and City Relocation Services" class="img-fluid w-100 service-card-img" loading="lazy">
-          </div>
-
-        </div>
-      </div>
 
       <!-- Card 5: Packing & Unpacking -->
       <div class="col-xl-3 col-lg-4 col-md-6">
@@ -216,7 +189,7 @@
               <i class="bi bi-buildings"></i>
             </div>
             
-            <h3 class="text-dark service-card-title mb-2">Storage Solutions</h3>
+            <h3 class="text-dark service-card-title mb-2">Warehousing Service</h3>
             
             <p class="text-muted service-card-desc mb-3">
               Secure, dry, and spacious storage facilities for your short-term or long-term needs.
@@ -235,34 +208,7 @@
         </div>
       </div>
 
-      <!-- Card 8: Domestic Shifting -->
-      <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="service-card h-100 bg-white shadow-sm overflow-hidden border border-light d-flex flex-column">
-          
-          <div class="service-card-body text-center p-4 d-flex flex-column align-items-center flex-grow-1">
-            <!-- Icon Wrapper -->
-            <div class="service-icon-wrapper rounded-circle d-flex align-items-center justify-content-center mb-3">
-              <i class="bi bi-globe-asia-australia"></i>
-            </div>
-            
-            <h3 class="text-dark service-card-title mb-2">Domestic Shifting</h3>
-            
-            <p class="text-muted service-card-desc mb-3">
-              Seamless long-distance interstate shifting services with timely door-to-door delivery.
-            </p>
 
-            <!-- Know More Link -->
-            <a href="<?= site_url('services/domestic-shifting') ?>" class="service-more-link mb-3">
-              Know More <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-
-          <div class="service-image-container overflow-hidden">
-            <img src="<?= base_url('assets/images/services/service_domestic.png') ?>" alt="<?=$company3?> Domestic Shifting and Inter-City Relocation" class="img-fluid w-100 service-card-img" loading="lazy">
-          </div>
-
-        </div>
-      </div>
 
     </div>
 

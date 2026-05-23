@@ -56,13 +56,11 @@
             <h4 class="footer-title-header">OUR SERVICES</h4>
             <ul class="footer-links-list">
               <li><a href="<?= site_url('services/household-shifting') ?>"><i class="bi bi-chevron-right"></i>Household Shifting</a></li>
-              <li><a href="<?= site_url('services/office-relocation') ?>"><i class="bi bi-chevron-right"></i>Office Relocation</a></li>
-              <li><a href="<?= site_url('services/vehicle-transport') ?>"><i class="bi bi-chevron-right"></i>Vehicle Transport</a></li>
+              <li><a href="<?= site_url('services/office-relocation') ?>"><i class="bi bi-chevron-right"></i>Office Shifting</a></li>
+              <li><a href="<?= site_url('services/vehicle-transport') ?>"><i class="bi bi-chevron-right"></i>Vehicle Transportation</a></li>
               <li><a href="<?= site_url('services/packing-unpacking') ?>"><i class="bi bi-chevron-right"></i>Packing &amp; Unpacking</a></li>
               <li><a href="<?= site_url('services/loading-unloading') ?>"><i class="bi bi-chevron-right"></i>Loading &amp; Unloading</a></li>
-              <li><a href="<?= site_url('services/storage-solutions') ?>"><i class="bi bi-chevron-right"></i>Storage Solutions</a></li>
-              <li><a href="<?= site_url('services/local-shifting') ?>"><i class="bi bi-chevron-right"></i>Local Shifting</a></li>
-              <li><a href="<?= site_url('services/domestic-shifting') ?>"><i class="bi bi-chevron-right"></i>Domestic Shifting</a></li>
+              <li><a href="<?= site_url('services/storage-solutions') ?>"><i class="bi bi-chevron-right"></i>Warehousing Service</a></li>
             </ul>
           </div>
 

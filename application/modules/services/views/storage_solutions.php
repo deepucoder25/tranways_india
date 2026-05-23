@@ -1,4 +1,4 @@
-<?php $this->load->view('template/inner_hero', ['page_title' => 'Storage Solutions', 'parent_title' => 'Services', 'parent_link' => 'services', 'bg_image' => 'assets/images/services/storage_solutions_hero.png']); ?>
+<?php $this->load->view('template/inner_hero', ['page_title' => 'Warehousing Service', 'parent_title' => 'Services', 'parent_link' => 'services', 'bg_image' => 'assets/images/services/storage_solutions_hero.png']); ?>
 
 <!-- Main Content Area with Sidebar -->
 <section class="hs-main-section py-5 hs-bg-pattern">
@@ -11,9 +11,9 @@
         <!-- Featured Image & Intro -->
         <div class="hs-card-premium bg-white rounded-4 shadow-sm p-4 p-md-5 mb-5 position-relative border-0">
           <div class="hs-premium-badge">100% Secure</div>
-          <img src="<?= base_url('assets/images/services/storage_solutions_hero.png') ?>" alt="<?= $company3 ?> Storage Solutions" class="img-fluid rounded-4 mb-4 w-100 object-fit-cover shadow" style="max-height: 450px;" loading="lazy">
+          <img src="<?= base_url('assets/images/services/storage_solutions_hero.png') ?>" alt="<?= $company3 ?> Warehousing Service" class="img-fluid rounded-4 mb-4 w-100 object-fit-cover shadow" style="max-height: 450px;" loading="lazy">
           
-          <h2 class="display-6 text-dark mb-4">Secure & Flexible <span class="text-primary-blue">Storage Solutions</span></h2>
+          <h2 class="display-6 text-dark mb-4">Secure & Flexible <span class="text-primary-blue">Warehousing Service</span></h2>
           <p class="text-muted fs-5 mb-4 lh-lg">
             Whether you are downsizing, renovating, or moving abroad temporarily, finding a safe place for your belongings is crucial. At <strong><?= $company3 ?></strong>, we provide state-of-the-art warehousing and storage facilities. Our clean, climate-controlled storage units are protected by 24/7 CCTV surveillance, fire control systems, and biometric access, ensuring your goods are perfectly safe until you need them again.
           </p>
@@ -204,13 +204,11 @@
             <h4 class="mb-4 border-bottom pb-2">More Services</h4>
             <ul class="list-unstyled hs-services-list mb-0">
               <li><a href="<?= site_url('services/household-shifting') ?>">Household Shifting <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/office-relocation') ?>">Office Relocation <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/vehicle-transport') ?>">Vehicle Transport <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/office-relocation') ?>">Office Shifting <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/vehicle-transport') ?>">Vehicle Transportation <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/packing-unpacking') ?>">Packing & Unpacking <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/loading-unloading') ?>">Loading & Unloading <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/local-shifting') ?>">Local Shifting <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/domestic-shifting') ?>">Domestic Shifting <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/storage-solutions') ?>" class="active">Storage Solutions <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/storage-solutions') ?>" class="active">Warehousing Service <i class="bi bi-chevron-right"></i></a></li>
             </ul>
           </div>
 

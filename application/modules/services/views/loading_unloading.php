@@ -204,13 +204,11 @@
             <h4 class="mb-4 border-bottom pb-2">More Services</h4>
             <ul class="list-unstyled hs-services-list mb-0">
               <li><a href="<?= site_url('services/household-shifting') ?>">Household Shifting <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/office-relocation') ?>">Office Relocation <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/vehicle-transport') ?>">Vehicle Transport <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/office-relocation') ?>">Office Shifting <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/vehicle-transport') ?>">Vehicle Transportation <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/packing-unpacking') ?>">Packing & Unpacking <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/loading-unloading') ?>" class="active">Loading & Unloading <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/local-shifting') ?>">Local Shifting <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/domestic-shifting') ?>">Domestic Shifting <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/storage-solutions') ?>">Storage Solutions <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/storage-solutions') ?>">Warehousing Service <i class="bi bi-chevron-right"></i></a></li>
             </ul>
           </div>
 

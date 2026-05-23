@@ -49,13 +49,11 @@
                   <a href="" class="dropdown-toggle-link">SERVICES <i class="bi bi-chevron-down dropdown-arrow"></i></a>
                   <ul class="dropdown-menu-list">
                     <li><a href="<?= site_url('services/household-shifting') ?>">Household Shifting</a></li>
-                    <li><a href="<?= site_url('services/office-relocation') ?>">Office Relocation</a></li>
-                    <li><a href="<?= site_url('services/vehicle-transport') ?>">Vehicle Transport</a></li>
+                    <li><a href="<?= site_url('services/office-relocation') ?>">Office Shifting</a></li>
+                    <li><a href="<?= site_url('services/vehicle-transport') ?>">Vehicle Transportation</a></li>
                     <li><a href="<?= site_url('services/packing-unpacking') ?>">Packing &amp; Unpacking</a></li>
                     <li><a href="<?= site_url('services/loading-unloading') ?>">Loading &amp; Unloading</a></li>
-                    <li><a href="<?= site_url('services/storage-solutions') ?>">Storage Solutions</a></li>
-                    <li><a href="<?= site_url('services/local-shifting') ?>">Local Shifting</a></li>
-                    <li><a href="<?= site_url('services/domestic-shifting') ?>">Domestic Shifting</a></li>
+                    <li><a href="<?= site_url('services/storage-solutions') ?>">Warehousing Service</a></li>
                   </ul>
                 </li>
                 <li class="menu-item"><a href="<?= site_url('location') ?>">LOCATIONS</a></li>
@@ -128,13 +126,11 @@
           </div>
           <ul class="drawer-submenu-list" id="drawerSubmenu">
             <li><a href="<?= site_url('services/household-shifting') ?>">Household Shifting</a></li>
-            <li><a href="<?= site_url('services/office-relocation') ?>">Office Relocation</a></li>
-            <li><a href="<?= site_url('services/vehicle-transport') ?>">Vehicle Transport</a></li>
+            <li><a href="<?= site_url('services/office-relocation') ?>">Office Shifting</a></li>
+            <li><a href="<?= site_url('services/vehicle-transport') ?>">Vehicle Transportation</a></li>
             <li><a href="<?= site_url('services/packing-unpacking') ?>">Packing &amp; Unpacking</a></li>
             <li><a href="<?= site_url('services/loading-unloading') ?>">Loading &amp; Unloading</a></li>
-            <li><a href="<?= site_url('services/storage-solutions') ?>">Storage Solutions</a></li>
-            <li><a href="<?= site_url('services/local-shifting') ?>">Local Shifting</a></li>
-            <li><a href="<?= site_url('services/domestic-shifting') ?>">Domestic Shifting</a></li>
+            <li><a href="<?= site_url('services/storage-solutions') ?>">Warehousing Service</a></li>
           </ul>
         </li>
 

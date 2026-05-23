@@ -29,8 +29,6 @@ $route["services/vehicle-transport"] = "services/vehicle_transport";
 $route["services/packing-unpacking"] = "services/packing_unpacking";
 $route["services/loading-unloading"] = "services/loading_unloading";
 $route["services/storage-solutions"] = "services/storage_solutions";
-$route["services/local-shifting"] = "services/local_shifting";
-$route["services/domestic-shifting"] = "services/domestic_shifting";
 
 $route["gallery"] = "gallery/photo_gallery";
 $route["branches"] = "packers_movers/state";
