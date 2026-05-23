@@ -65,7 +65,7 @@ class MX_Controller
         $this->comp['instagramhtml'] = "";
         $this->comp['twitterhtml'] = "";
         $this->comp['linkedinhtml'] = "";
-        $this->comp['whatsapphtml'] = "";
+        $this->comp['whatsapphtml'] = "https://wa.me/91 9742680005";
 
         $this->comp['address'] = "No.402 ,3rd Floor,Aecs layout road, opp Shiva Temple,kudlu, Bommanahalli post , Bangalore-560068, Karnataka";
         $this->comp['address1'] = "No.402,3rd Floor,Aecs layout road, opp Shiva Temple,kudlu";

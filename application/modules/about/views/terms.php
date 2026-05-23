@@ -28,7 +28,7 @@
           
           <div class="alert alert-info border-start border-4 border-blue rounded-3 p-3 mb-4">
             <p class="mb-0 small text-muted">
-              <strong>Last Updated: May 2026</strong>. Please review these Terms and Conditions carefully. By booking a domestic, household, commercial, or vehicle relocation service with Tranways India, you explicitly agree to compile and comply with the guidelines listed below.
+              <strong>Last Updated: May 2026</strong>. Please review these Terms and Conditions carefully. By booking a domestic, household, commercial, or vehicle relocation service with <?=$company3?>, you explicitly agree to compile and comply with the guidelines listed below.
             </p>
           </div>
 
@@ -36,10 +36,10 @@
           <div class="legal-section-block mb-5" id="intro">
             <h3 class="legal-section-title text-blue mb-3 pb-2 border-bottom">1. Introduction & Acceptance</h3>
             <p class="text-muted">
-              This Relocation Shifting Service Agreement governs all moving, packing, warehousing, unpacking, loading, vehicle container shipping, and logistics solutions carried out by Tranways India Packers and Movers. Any individual or corporate booking services with us is hereafter referred to as the "Customer" or "Client".
+              This Relocation Shifting Service Agreement governs all moving, packing, warehousing, unpacking, loading, vehicle container shipping, and logistics solutions carried out by <?=$company3?>. Any individual or corporate booking services with us is hereafter referred to as the "Customer" or "Client".
             </p>
             <p class="text-muted">
-              These terms form a legally binding contract between Tranways India and the Client. Any updates made in written contracts, official letters, or digital quotations overwrite conflicting terms.
+              These terms form a legally binding contract between <?=$company3?> and the Client. Any updates made in written contracts, official letters, or digital quotations overwrite conflicting terms.
             </p>
           </div>
 
@@ -82,7 +82,7 @@
           <div class="legal-section-block mb-5" id="liability">
             <h3 class="legal-section-title text-blue mb-3 pb-2 border-bottom">4. Carrier Liabilities</h3>
             <p class="text-muted">
-              Tranways India exercises standard reasonable care in packing and shipping goods. However, our liability for damaged goods is strictly capped under the standard Carriage by Road Act guidelines:
+              <?=$company3?> exercises standard reasonable care in packing and shipping goods. However, our liability for damaged goods is strictly capped under the standard Carriage by Road Act guidelines:
             </p>
             <ul class="legal-bullet-list list-unstyled text-muted d-flex flex-column gap-2">
               <li class="d-flex align-items-start gap-2">
@@ -95,7 +95,7 @@
               </li>
               <li class="d-flex align-items-start gap-2">
                 <i class="bi bi-circle-fill text-orange mt-2 small-dot"></i>
-                <span><strong>Force Majeure:</strong> Tranways India will not be held responsible for transit delays, cargo damage, or delivery failures arising from natural disasters (earthquakes, cyclones, floods), government lockouts, state borders closures, or riots.</span>
+                <span><strong>Force Majeure:</strong> <?=$company3?> will not be held responsible for transit delays, cargo damage, or delivery failures arising from natural disasters (earthquakes, cyclones, floods), government lockouts, state borders closures, or riots.</span>
               </li>
             </ul>
           </div>

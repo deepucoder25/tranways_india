@@ -88,11 +88,11 @@
               <div class="timeline-check-circle bg-orange text-white"><i class="bi bi-truck"></i></div>
               <div class="timeline-check-card shadow-sm p-4 rounded-4 bg-white border border-light w-100">
                 <span class="step-time text-blue font-weight-semibold">2 Weeks Before Moving</span>
-                <h3 class="step-heading text-blue mt-1 mb-3">Book Tranways India & Start Sorting</h3>
+                <h3 class="step-heading text-blue mt-1 mb-3">Book <?=$company3?> & Start Sorting</h3>
                 <ul class="step-checkmarks-list list-unstyled text-muted d-flex flex-column gap-2 mb-0">
                   <li class="d-flex align-items-start gap-2">
                     <i class="bi bi-check2-square text-orange mt-1"></i>
-                    <span>Confirm your shifting booking with Tranways India. Finalize your customized packing options and transit schedule.</span>
+                    <span>Confirm your shifting booking with <?=$company3?>. Finalize your customized packing options and transit schedule.</span>
                   </li>
                   <li class="d-flex align-items-start gap-2">
                     <i class="bi bi-check2-square text-orange mt-1"></i>

@@ -13,7 +13,7 @@
           <div class="hs-premium-badge">Safe Handling</div>
           <img src="<?= base_url('assets/images/services/loading_unloading_hero.png') ?>" alt="<?= $company3 ?> Loading and Unloading" class="img-fluid rounded-4 mb-4 w-100 object-fit-cover shadow" style="max-height: 450px;" loading="lazy">
           
-          <h2 class="display-6 fw-bold text-dark mb-4">Expert <span class="text-primary-blue">Loading & Unloading</span></h2>
+          <h2 class="display-6 text-dark mb-4">Expert <span class="text-primary-blue">Loading & Unloading</span></h2>
           <p class="text-muted fs-5 mb-4 lh-lg">
             Improper loading is the number one cause of damage during transit. At <strong><?= $company3 ?></strong>, our highly trained labor force uses specialized techniques to lift, load, and arrange your belongings safely. We carefully balance the weight distribution inside the moving truck to prevent any shifting during transit, ensuring absolute safety for both heavy furniture and fragile cartons.
           </p>
@@ -25,7 +25,7 @@
                   <i class="bi bi-person-arms-up fs-2"></i>
                 </div>
                 <div>
-                  <h5 class="fw-bold mb-1">Trained Workforce</h5>
+                  <h5 class="mb-1">Trained Workforce</h5>
                   <p class="text-muted small mb-0">Professional lifting techniques.</p>
                 </div>
               </div>
@@ -36,7 +36,7 @@
                   <i class="bi bi-symmetry-horizontal fs-2"></i>
                 </div>
                 <div>
-                  <h5 class="fw-bold mb-1">Weight Distribution</h5>
+                  <h5 class="mb-1">Weight Distribution</h5>
                   <p class="text-muted small mb-0">Strategic truck loading.</p>
                 </div>
               </div>
@@ -48,35 +48,35 @@
         <div class="hs-card-premium bg-white rounded-4 shadow-sm p-4 p-md-5 mb-5 border-0">
           <div class="d-flex align-items-center mb-4">
             <i class="bi bi-gear-fill text-orange fs-2 me-3"></i>
-            <h3 class="fw-bold mb-0">Our proven <span class="text-primary-blue">4-Step</span> Process</h3>
+            <h3 class="mb-0">Our proven <span class="text-primary-blue">4-Step</span> Process</h3>
           </div>
           
           <div class="row g-4 hs-process-grid">
             <div class="col-sm-6">
               <div class="hs-process-box p-4 rounded-4 bg-light h-100 position-relative overflow-hidden">
                 <div class="hs-process-num">01</div>
-                <h5 class="fw-bold text-dark position-relative z-index-2">Safety Briefing</h5>
+                <h5 class="text-dark position-relative z-index-2">Safety Briefing</h5>
                 <p class="text-muted small mb-0 position-relative z-index-2">Our supervisor conducts a quick safety assessment of stairs, doors, and hallways.</p>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="hs-process-box p-4 rounded-4 bg-light h-100 position-relative overflow-hidden">
                 <div class="hs-process-num">02</div>
-                <h5 class="fw-bold text-dark position-relative z-index-2">Heavy Lifting</h5>
+                <h5 class="text-dark position-relative z-index-2">Heavy Lifting</h5>
                 <p class="text-muted small mb-0 position-relative z-index-2">Using lifting straps and dollies to safely move heavy furniture to the truck.</p>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="hs-process-box p-4 rounded-4 bg-light h-100 position-relative overflow-hidden">
                 <div class="hs-process-num">03</div>
-                <h5 class="fw-bold text-dark position-relative z-index-2">Strategic Loading</h5>
+                <h5 class="text-dark position-relative z-index-2">Strategic Loading</h5>
                 <p class="text-muted small mb-0 position-relative z-index-2">Heavy items placed at the base, with fragile items safely secured on top.</p>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="hs-process-box p-4 rounded-4 bg-light h-100 position-relative overflow-hidden">
                 <div class="hs-process-num">04</div>
-                <h5 class="fw-bold text-dark position-relative z-index-2">Careful Unloading</h5>
+                <h5 class="text-dark position-relative z-index-2">Careful Unloading</h5>
                 <p class="text-muted small mb-0 position-relative z-index-2">Systematic unloading at the destination and placement in designated rooms.</p>
               </div>
             </div>
@@ -86,7 +86,7 @@
         <!-- Custom Inner Testimonials -->
         <div class="hs-card-premium bg-white rounded-4 shadow-sm p-4 p-md-5 mb-5 border-0">
           <div class="d-flex align-items-center justify-content-between mb-4 border-bottom pb-3">
-            <h3 class="fw-bold mb-0"><i class="bi bi-star-fill text-warning me-2"></i> Client <span class="text-primary-blue">Stories</span></h3>
+            <h3 class="mb-0"><i class="bi bi-star-fill text-warning me-2"></i> Client <span class="text-primary-blue">Stories</span></h3>
           </div>
           
           <div class="row g-4">
@@ -97,9 +97,9 @@
                 </div>
                 <p class="fst-italic text-muted small mb-3">"I lived on the 4th floor with no elevator. The loading team handled my heavy double bed and wardrobe effortlessly without a single scratch to the walls."</p>
                 <div class="d-flex align-items-center">
-                  <div class="hs-reviewer-avatar bg-primary-blue text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3">S</div>
+                  <div class="hs-reviewer-avatar bg-primary-blue text-white rounded-circle d-flex align-items-center justify-content-center me-3">S</div>
                   <div>
-                    <h6 class="fw-bold mb-0">Sunil Verma</h6>
+                    <h6 class="mb-0">Sunil Verma</h6>
                     <span class="small text-muted">Customer</span>
                   </div>
                 </div>
@@ -112,9 +112,9 @@
                 </div>
                 <p class="fst-italic text-muted small mb-3">"The way they organized the truck was like playing Tetris perfectly. Nothing moved during the 500km journey."</p>
                 <div class="d-flex align-items-center">
-                  <div class="hs-reviewer-avatar bg-orange text-white rounded-circle d-flex align-items-center justify-content-center fw-bold me-3">M</div>
+                  <div class="hs-reviewer-avatar bg-orange text-white rounded-circle d-flex align-items-center justify-content-center me-3">M</div>
                   <div>
-                    <h6 class="fw-bold mb-0">Manish Singh</h6>
+                    <h6 class="mb-0">Manish Singh</h6>
                     <span class="small text-muted">Customer</span>
                   </div>
                 </div>
@@ -127,13 +127,13 @@
         <div class="hs-card-premium bg-white rounded-4 shadow-sm p-4 p-md-5 mb-5 border-0">
            <div class="d-flex align-items-center mb-4 border-bottom pb-3">
              <i class="bi bi-question-circle-fill text-orange fs-2 me-3"></i>
-            <h3 class="fw-bold mb-0">Frequently Asked <span class="text-primary-blue">Questions</span></h3>
+            <h3 class="mb-0">Frequently Asked <span class="text-primary-blue">Questions</span></h3>
           </div>
           
           <div class="accordion hs-accordion" id="hsFaqAccordion">
             <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm overflow-hidden">
               <h2 class="accordion-header">
-                <button class="accordion-button fw-bold bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#hsFaq1">
+                <button class="accordion-button bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#hsFaq1">
                   How do you ensure furniture isn't scratched while loading?
                 </button>
               </h2>
@@ -146,7 +146,7 @@
             
             <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm overflow-hidden">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#hsFaq2">
+                <button class="accordion-button collapsed bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#hsFaq2">
                   Do you dismantle large furniture before loading?
                 </button>
               </h2>
@@ -166,33 +166,33 @@
         <div class="position-sticky hs-sidebar-wrapper" style="top: 100px;">
           
           <div class="hs-sidebar-widget bg-white rounded-4 shadow-sm p-4 mb-4 border-top border-4 border-primary-blue">
-            <h4 class="fw-bold mb-4">Our <span class="text-primary-blue">Guarantees</span></h4>
+            <h4 class="mb-4">Our <span class="text-primary-blue">Guarantees</span></h4>
             <ul class="list-unstyled mb-0">
               <li class="d-flex align-items-center mb-3 pb-3 border-bottom">
                 <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i>
                 <div>
-                  <h6 class="fw-bold mb-0">No Hidden Costs</h6>
+                  <h6 class="mb-0">No Hidden Costs</h6>
                   <span class="text-muted small">Transparent pricing policy.</span>
                 </div>
               </li>
               <li class="d-flex align-items-center mb-3 pb-3 border-bottom">
                 <i class="bi bi-clock-history text-orange fs-4 me-3"></i>
                 <div>
-                  <h6 class="fw-bold mb-0">On-Time Delivery</h6>
+                  <h6 class="mb-0">On-Time Delivery</h6>
                   <span class="text-muted small">We respect your schedule.</span>
                 </div>
               </li>
               <li class="d-flex align-items-center mb-3 pb-3 border-bottom">
                 <i class="bi bi-box2-heart text-danger fs-4 me-3"></i>
                 <div>
-                  <h6 class="fw-bold mb-0">Zero Damage</h6>
+                  <h6 class="mb-0">Zero Damage</h6>
                   <span class="text-muted small">Premium packing materials.</span>
                 </div>
               </li>
               <li class="d-flex align-items-center">
                 <i class="bi bi-person-badge text-primary-blue fs-4 me-3"></i>
                 <div>
-                  <h6 class="fw-bold mb-0">Verified Staff</h6>
+                  <h6 class="mb-0">Verified Staff</h6>
                   <span class="text-muted small">Background-checked crew.</span>
                 </div>
               </li>
@@ -201,7 +201,7 @@
 
           <!-- Other Services List -->
           <div class="hs-sidebar-widget bg-white rounded-4 shadow-sm p-4 mb-4 border border-light">
-            <h4 class="fw-bold mb-4 border-bottom pb-2">More Services</h4>
+            <h4 class="mb-4 border-bottom pb-2">More Services</h4>
             <ul class="list-unstyled hs-services-list mb-0">
               <li><a href="<?= site_url('services/household-shifting') ?>">Household Shifting <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/office-relocation') ?>">Office Relocation <i class="bi bi-chevron-right"></i></a></li>
@@ -223,12 +223,12 @@
               <div class="hs-help-icon mb-3 bg-white text-orange rounded-circle d-inline-flex p-3 shadow position-relative">
                 <i class="bi bi-telephone-outbound fs-3 hs-animated-ring"></i>
               </div>
-              <h4 class="fw-bold mb-2">Ready to Relocate?</h4>
+              <h4 class="mb-2">Ready to Relocate?</h4>
               <p class="small text-white-75 mb-3 px-2">Call us directly for an instant moving estimate.</p>
               <a href="<?= $phonehtml ?>" class="text-white text-decoration-none fs-4 fw-extrabold d-block mb-4 hs-phone-link">
                 <?= $phone ?>
               </a>
-              <a href="<?= site_url('contacts') ?>" class="btn btn-light rounded-pill px-4 py-2 fw-bold text-orange w-100 shadow-sm hs-btn-pulse">Contact Us Now</a>
+              <a href="<?= site_url('contacts') ?>" class="btn btn-light rounded-pill px-4 py-2 text-orange w-100 shadow-sm hs-btn-pulse">Contact Us Now</a>
             </div>
           </div>
 

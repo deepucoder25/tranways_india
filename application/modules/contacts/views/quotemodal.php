@@ -5,7 +5,7 @@
 
       <!-- Header -->
       <div class="modal-header modal-gradient-header text-white border-0 py-3">
-        <h5 class="modal-title fw-bold mb-0" id="qteModalLabel">
+        <h5 class="modal-title mb-0" id="qteModalLabel">
             <i class="bi bi-gift-fill me-2 text-warning"></i> Get a Free Quote
         </h5>
         <p class="mb-0 text-white-50 ms-auto me-3 d-none d-md-block small">Fast & Transparent Pricing</p>

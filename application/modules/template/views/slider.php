@@ -71,8 +71,8 @@
 
         <!-- CTA Buttons -->
         <div class="hero-actions-row d-flex align-items-center gap-4">
-          <a href="<?= site_url('services') ?>" class="btn btn-hero-explore d-inline-flex align-items-center gap-2">
-            EXPLORE SERVICES <i class="bi bi-arrow-right"></i>
+          <a href="<?= site_url('about') ?>" class="btn btn-hero-explore d-inline-flex align-items-center gap-2">
+            ABOUT US <i class="bi bi-arrow-right"></i>
           </a>
         </div>
 

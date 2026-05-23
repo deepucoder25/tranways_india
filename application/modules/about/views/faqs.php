@@ -18,10 +18,8 @@
             <h4 class="contact-card-sub mb-2">Need Direct Help?</h4>
             <p class="text-muted small mb-3">Our 24/7 relocation experts are ready to resolve any specific questions.</p>
             <div class="d-flex flex-column gap-2">
-              <a href="tel:<?= $phone ?>" class="d-flex align-items-center gap-2 text-blue font-weight-semibold text-decoration-none">
-                <i class="bi bi-telephone-fill text-orange"></i> <?= $phone ?>
-              </a>
-              <a href="mailto:<?= $mail ?>" class="d-flex align-items-center gap-2 text-blue font-weight-semibold text-decoration-none">
+              <a href="<?=$phonehtml?>" class="d-flex align-items-center gap-2 text-blue font-weight-semibold text-decoration-none"><?=$phone?><i class="bi bi-telephone-fill text-orange"></i> <?= $phone ?><?=$phone?></a>
+              <a href="<?=$mailhtml?>" class="d-flex align-items-center gap-2 text-blue font-weight-semibold text-decoration-none">
                 <i class="bi bi-envelope-fill text-orange"></i> <?= $mail ?>
               </a>
             </div>
@@ -42,7 +40,7 @@
             <div class="accordion-list d-flex flex-column gap-3">
               <details class="faq-accordion-details shadow-sm rounded-3 bg-white border border-light transition-smooth" open>
                 <summary class="faq-accordion-summary p-3 d-flex justify-content-between align-items-center font-weight-semibold cursor-pointer">
-                  <span>How early should I book my relocation with Tranways India?</span>
+                  <span>How early should I book my relocation with <?=$company3?>?</span>
                   <i class="bi bi-plus-lg toggle-icon-plus text-orange"></i>
                 </summary>
                 <div class="faq-accordion-content p-3 border-top border-light text-muted">

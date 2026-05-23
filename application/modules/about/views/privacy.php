@@ -28,7 +28,7 @@
           
           <div class="alert alert-info border-start border-4 border-blue rounded-3 p-3 mb-4">
             <p class="mb-0 small text-muted">
-              <strong>Last Updated: May 2026</strong>. At Tranways India Packers and Movers, we prioritize the protection of your personal information. This policy governs how we collect, process, manage, and safeguard customer data during booking operations.
+              <strong>Last Updated: May 2026</strong>. At <?=$company3?>, we prioritize the protection of your personal information. This policy governs how we collect, process, manage, and safeguard customer data during booking operations.
             </p>
           </div>
 
@@ -142,7 +142,7 @@
               By using our booking systems and submitting quote sheets, you explicitly consent to the collection and handling of your data as detailed in this policy.
             </p>
             <p class="text-muted">
-              Tranways India reserves the right to update this policy parameters periodically. Any changes will be updated on this page with an adjusted "Last Updated" timestamp. If you wish to update, modify, or delete your contact parameters from our CRM files, please reach out to our legal coordinates.
+              <?=$company3?> reserves the right to update this policy parameters periodically. Any changes will be updated on this page with an adjusted "Last Updated" timestamp. If you wish to update, modify, or delete your contact parameters from our CRM files, please reach out to our legal coordinates.
             </p>
           </div>
 

@@ -6,10 +6,10 @@
     <div class="row g-5 align-items-center">
       <div class="col-lg-6">
         <div class="legacy-content-wrapper">
-          <span class="section-subtitle-badge">â€” â€¢ OUR JOURNEY & LEGACY â€¢ â€”</span>
+          <span class="section-subtitle-badge">OUR JOURNEY & LEGACY</span>
           <h2 class="legacy-main-title mt-2 mb-4">Decades of Relocation <span class="text-orange">Trust & Excellence</span></h2>
           <p class="lead text-muted mb-4">
-            Founded with a vision to redefine the packing and moving industry in India, <span class="text-orange font-weight-bold">Tranways India Packers and Movers</span> has emerged as one of the nation's most trusted logistics partners. We simplify shifting, turning stressful relocations into seamless transitions.
+            Founded with a vision to redefine the packing and moving industry in India, <span class="text-orange font-weight-bold"><?=$company3?></span> has emerged as one of the nation's most trusted logistics partners. We simplify shifting, turning stressful relocations into seamless transitions.
           </p>
           <p class="text-muted mb-4">
             Since our inception, we have completed thousands of residential, commercial, industrial, and vehicle relocations. Our IBA approval and ISO 9001:2015 certification stand as testament to our commitment to maintaining high quality standards, reliable transit safety, and fair corporate pricing.
@@ -21,7 +21,7 @@
       <div class="col-lg-6">
         <div class="about-visual-collage position-relative">
           <div class="collage-main-img-wrapper overflow-hidden rounded-4 shadow-lg border border-3 border-white">
-            <img src="<?= base_url('assets/images/choose_us_main.png') ?>" alt="Tranways India Team Packing Shifting" class="img-fluid w-100 collage-main-img" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
+            <img src="<?= base_url('assets/images/choose_us_main.png') ?>" alt="<?=$company3?> Team Packing Shifting" class="img-fluid w-100 collage-main-img" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
           </div>
           
           <!-- Float Badges -->

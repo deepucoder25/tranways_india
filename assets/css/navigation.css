@@ -6,16 +6,16 @@
   background: var(--white);
   box-shadow: var(--shadow-sm);
   padding: 0;
+  margin: 0;
 }
 
 .nav-card-container {
   width: 100%;
   max-width: 100%;
   margin: 0;
+  padding: 0;
   background: var(--white);
-  border-radius: 0;
   position: relative;
-  overflow: visible; 
   border: none;
 }
 
@@ -24,64 +24,64 @@
   align-items: stretch;
   justify-content: space-between;
   width: 100%;
-  min-height: 100px;
+  min-height: 80px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Logo Section styling */
 .logo-wrapper {
-  padding: 10px 100px 10px 40px;
+  padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   background: var(--white);
   flex-shrink: 0;
 }
 
+.header-logo-link {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
 .logo-img {
-  height: 76px;
+  height: 100px;
   width: auto;
   display: block;
+  margin-left: 39px;
 }
 
 /* Right content split in Top and Bottom bars */
 .header-right-content {
-  flex-grow: 1;
+  flex-grow: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 
-/* --- Row 1: Royal Blue slanted top-bar --- */
+/* --- Row 1: Royal Blue top-bar --- */
 .header-top-bar {
-  height: 44px;
   background: var(--primary-blue);
-  border-radius: 0;
+  border-radius: 50px 0 0 50px;
+  border-left: 6px solid var(--primary-orange);
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: relative;
-  padding: 0 60px 0 0;
-}
-
-/* S-Curve shape separating logo area from top bar */
-.top-bar-curve {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 110px;
-  height: 100%;
-  /* Pushes the SVG container to align with left edge */
-  transform: translateX(-100%);
-  pointer-events: none;
+  padding: 0 40px 0 20px;
+  height: 42px;
+  margin-top: 0;
+  margin-left: auto;
+  width: 100%;
 }
 
 .top-bar-content {
   display: flex;
   align-items: center;
-  gap: 25px;
-  color: var(--white);
+  gap: 30px;
   height: 100%;
 }
 
@@ -90,10 +90,9 @@
   text-decoration: none !important;
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.2px;
+  gap: 10px;
+  font-size: 13.5px;
+  font-weight: 700;
   transition: var(--transition-smooth);
 }
 
@@ -108,32 +107,33 @@
 }
 
 .icon-circle {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   background: var(--white);
   color: var(--primary-green);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 13px;
   transition: var(--transition-elastic);
 }
 
 .top-bar-sep {
-  color: rgba(255, 255, 255, 0.25);
-  font-weight: 300;
+  color: rgba(255, 255, 255, 0.3);
   font-size: 16px;
 }
 
+/* --- Row 2: Bottom menu bar --- */
 .header-bottom-bar {
-  height: 56px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px 0 0;
+  gap: 40px;
+  padding: 0 30px 0 40px;
   background: var(--white);
-  border-radius: 0;
+  margin: 0;
 }
 
 .desktop-nav {
@@ -144,7 +144,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 30px;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -159,13 +159,18 @@
 
 .desktop-menu .menu-item > a {
   text-decoration: none !important;
-  color: #444444;
-  font-size: 13.5px;
+  color: #444;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  text-transform: uppercase;
   padding: 10px 0;
   transition: var(--transition-smooth);
   position: relative;
+}
+
+.desktop-menu .menu-item.active > a {
+  color: var(--primary-blue);
+  font-weight: 800;
 }
 
 .desktop-menu .menu-item > a:hover {
@@ -184,10 +189,6 @@
   background-color: var(--primary-green);
   border-radius: 2px;
   transition: var(--transition-smooth);
-}
-
-.desktop-menu .menu-item.active > a {
-  color: var(--primary-green);
 }
 
 .desktop-menu .menu-item.active > a::after,
@@ -239,6 +240,7 @@
   text-decoration: none !important;
   font-size: 13.5px;
   font-weight: 700;
+  text-transform: none;
   transition: var(--transition-smooth);
 }
 
@@ -250,15 +252,15 @@
 
 /* --- Orange Get a Quote CTA Button --- */
 .btn-quote {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 8px;
   background: var(--primary-orange);
   color: var(--white);
   border: none;
-  padding: 8px 18px;
-  border-radius: 6px;
-  font-size: 12.5px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 3px 10px rgba(243, 112, 33, 0.2);
@@ -314,7 +316,7 @@
 }
 
 .mobile-logo-img {
-  height: 45px;
+  height: 65px;
   width: auto;
 }
 

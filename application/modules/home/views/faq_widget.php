@@ -45,7 +45,7 @@
               <span class="faq-icon-plus">+</span>
               <span class="faq-icon-minus">-</span>
             </span>
-            <h6 class="fw-bold faq-question mb-0">1. What services does Transways India Packers and Movers offer?</h6>
+            <h6 class="faq-question mb-0">1. What services does Transways India Packers and Movers offer?</h6>
             <span class="faq-chevron"><i class="bi bi-chevron-down"></i></span>
           </summary>
           <div class="faq-content">
@@ -62,7 +62,7 @@
               <span class="faq-icon-plus">+</span>
               <span class="faq-icon-minus">-</span>
             </span>
-            <h6 class="fw-bold faq-question mb-0">5. How far in advance should I book my move?</h6>
+            <h6 class="faq-question mb-0">5. How far in advance should I book my move?</h6>
             <span class="faq-chevron"><i class="bi bi-chevron-down"></i></span>
           </summary>
           <div class="faq-content">
@@ -79,7 +79,7 @@
               <span class="faq-icon-plus">+</span>
               <span class="faq-icon-minus">-</span>
             </span>
-            <h6 class="fw-bold faq-question mb-0">6. Do you provide packing materials?</h6>
+            <h6 class="faq-question mb-0">6. Do you provide packing materials?</h6>
             <span class="faq-chevron"><i class="bi bi-chevron-down"></i></span>
           </summary>
           <div class="faq-content">
@@ -96,7 +96,7 @@
               <span class="faq-icon-plus">+</span>
               <span class="faq-icon-minus">-</span>
             </span>
-            <h6 class="fw-bold faq-question mb-0">7. Can you move heavy or delicate items?</h6>
+            <h6 class="faq-question mb-0">7. Can you move heavy or delicate items?</h6>
             <span class="faq-chevron"><i class="bi bi-chevron-down"></i></span>
           </summary>
           <div class="faq-content">
@@ -118,7 +118,7 @@
               <span class="faq-icon-plus">+</span>
               <span class="faq-icon-minus">-</span>
             </span>
-            <h6 class="fw-bold faq-question mb-0">2. How do I get a quote for my move?</h6>
+            <h6 class="faq-question mb-0">2. How do I get a quote for my move?</h6>
             <span class="faq-chevron"><i class="bi bi-chevron-down"></i></span>
           </summary>
           <div class="faq-content">
@@ -135,7 +135,7 @@
               <span class="faq-icon-plus">+</span>
               <span class="faq-icon-minus">-</span>
             </span>
-            <h6 class="fw-bold faq-question mb-0">3. Is my belongings safe during transit?</h6>
+            <h6 class="faq-question mb-0">3. Is my belongings safe during transit?</h6>
             <span class="faq-chevron"><i class="bi bi-chevron-down"></i></span>
           </summary>
           <div class="faq-content">
@@ -152,7 +152,7 @@
               <span class="faq-icon-plus">+</span>
               <span class="faq-icon-minus">-</span>
             </span>
-            <h6 class="fw-bold faq-question mb-0">4. Do you provide insurance for goods?</h6>
+            <h6 class="faq-question mb-0">4. Do you provide insurance for goods?</h6>
             <span class="faq-chevron"><i class="bi bi-chevron-down"></i></span>
           </summary>
           <div class="faq-content">
@@ -169,7 +169,7 @@
               <span class="faq-icon-plus">+</span>
               <span class="faq-icon-minus">-</span>
             </span>
-            <h6 class="fw-bold faq-question mb-0">8. Do you offer storage facilities?</h6>
+            <h6 class="faq-question mb-0">8. Do you offer storage facilities?</h6>
             <span class="faq-chevron"><i class="bi bi-chevron-down"></i></span>
           </summary>
           <div class="faq-content">
@@ -192,7 +192,7 @@
           <i class="bi bi-headset"></i>
         </div>
         <div>
-          <h3 class="fw-bold mb-1">Still have questions?</h3>
+          <h3 class="mb-1">Still have questions?</h3>
           <p class="mb-0 text-white-50">Our team is here to help you!</p>
         </div>
       </div>
@@ -204,7 +204,7 @@
         </div>
         <div>
           <span class="text-uppercase tracking-wider text-white-50 d-block faq-cta-call-label">Call Us Now</span>
-          <a href="tel:+918287774554" class="fw-extrabold text-white text-decoration-none faq-cta-phone">+91 8287 774 554</a>
+          <a href="<?=$phonehtml?>" class="fw-extrabold text-white text-decoration-none faq-cta-phone"><?=$phone?></a>
         </div>
       </div>
 

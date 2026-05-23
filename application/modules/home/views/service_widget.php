@@ -6,7 +6,7 @@
       <div class="col-lg-8 col-md-10">
         
         <!-- Label Badge with horizontal lines -->
-        <span class="text-primary fw-bold text-uppercase tracking-wider d-inline-flex align-items-center gap-2 mb-3 services-label-badge">
+        <span class="text-primary text-uppercase tracking-wider d-inline-flex align-items-center gap-2 mb-3 services-label-badge">
           <span class="services-label-line"></span> OUR SERVICES <span class="services-label-line"></span>
         </span>
 
@@ -40,7 +40,7 @@
             </div>
             
             <!-- Card Heading (Uses natural styling as requested) -->
-            <h3 class="fw-bold text-dark service-card-title mb-2">Household Shifting</h3>
+            <h3 class="text-dark service-card-title mb-2">Household Shifting</h3>
             
             <!-- Description -->
             <p class="text-muted service-card-desc mb-3">
@@ -71,7 +71,7 @@
               <i class="bi bi-building"></i>
             </div>
             
-            <h3 class="fw-bold text-dark service-card-title mb-2">Office Relocation</h3>
+            <h3 class="text-dark service-card-title mb-2">Office Relocation</h3>
             
             <p class="text-muted service-card-desc mb-3">
               Hassle-free office shifting with minimal downtime and maximum business continuity.
@@ -100,7 +100,7 @@
               <i class="bi bi-truck"></i>
             </div>
             
-            <h3 class="fw-bold text-dark service-card-title mb-2">Vehicle Transport</h3>
+            <h3 class="text-dark service-card-title mb-2">Vehicle Transport</h3>
             
             <p class="text-muted service-card-desc mb-3">
               Secure transportation of your cars, bikes, and other vehicles across India safely.
@@ -129,7 +129,7 @@
               <i class="bi bi-geo-alt-fill"></i>
             </div>
             
-            <h3 class="fw-bold text-dark service-card-title mb-2">Local Shifting</h3>
+            <h3 class="text-dark service-card-title mb-2">Local Shifting</h3>
             
             <p class="text-muted service-card-desc mb-3">
               Fast, smooth, and pocket-friendly local relocation services within your city limits.
@@ -158,7 +158,7 @@
               <i class="bi bi-box-seam"></i>
             </div>
             
-            <h3 class="fw-bold text-dark service-card-title mb-2">Packing & Unpacking</h3>
+            <h3 class="text-dark service-card-title mb-2">Packing & Unpacking</h3>
             
             <p class="text-muted service-card-desc mb-3">
               Premium packing materials and expert techniques for maximum safety of your items.
@@ -187,7 +187,7 @@
               <i class="bi bi-boxes"></i>
             </div>
             
-            <h3 class="fw-bold text-dark service-card-title mb-2">Loading & Unloading</h3>
+            <h3 class="text-dark service-card-title mb-2">Loading & Unloading</h3>
             
             <p class="text-muted service-card-desc mb-3">
               Highly trained handlers loading and unloading your valuables with utmost care and speed.
@@ -216,7 +216,7 @@
               <i class="bi bi-buildings"></i>
             </div>
             
-            <h3 class="fw-bold text-dark service-card-title mb-2">Storage Solutions</h3>
+            <h3 class="text-dark service-card-title mb-2">Storage Solutions</h3>
             
             <p class="text-muted service-card-desc mb-3">
               Secure, dry, and spacious storage facilities for your short-term or long-term needs.
@@ -245,7 +245,7 @@
               <i class="bi bi-globe-asia-australia"></i>
             </div>
             
-            <h3 class="fw-bold text-dark service-card-title mb-2">Domestic Shifting</h3>
+            <h3 class="text-dark service-card-title mb-2">Domestic Shifting</h3>
             
             <p class="text-muted service-card-desc mb-3">
               Seamless long-distance interstate shifting services with timely door-to-door delivery.

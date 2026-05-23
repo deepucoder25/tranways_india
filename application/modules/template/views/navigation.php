@@ -8,44 +8,34 @@
         <!-- Logo Section -->
         <div class="logo-wrapper">
           <a href="<?= base_url() ?>" class="header-logo-link">
-            <img src="<?= base_url('assets/images/logo.svg') ?>" alt="Tranways India Packers and Movers" class="logo-img">
+            <img src="<?= base_url('assets/images/logo/logo.png') ?>" alt="Tranways India Packers and Movers" class="logo-img" loading="lazy">
           </a>
         </div>
 
         <!-- Right Side Two-Row Content -->
         <div class="header-right-content">
+          <!-- Top Blue Bar -->
           <div class="header-top-bar">
-            <div class="top-bar-curve">
-              <svg viewBox="0 0 100 50" preserveAspectRatio="none" style="display: block; width: 100%; height: 100%;">
-                <path d="M100,0 L45,0 C20,0 10,25 25,38 C35,48 48,50 70,50 L100,50 Z" fill="var(--primary-blue)" />
-                <path d="M45,0 C20,0 10,25 25,38 C35,48 48,50 70,50" fill="none" stroke="var(--primary-orange)" stroke-width="5" stroke-linecap="round" />
-              </svg>
-            </div>
-            
             <div class="top-bar-content">
               <a href="<?= $phonehtml ?>" class="top-info-link">
                 <span class="icon-circle"><i class="bi bi-telephone-fill"></i></span>
-                <span class="info-text"><?= $phone ?></span>
+                <span><?= $phone ?></span>
               </a>
               <span class="top-bar-sep">|</span>
               <a href="<?= $mailhtml ?>" class="top-info-link">
                 <span class="icon-circle"><i class="bi bi-envelope-fill"></i></span>
-                <span class="info-text"><?= $mail ?></span>
+                <span><?= $mail ?></span>
               </a>
             </div>
           </div>
 
-          <!-- Row 2: Desktop Menu & Quote Button -->
+          <!-- Bottom Menu Bar -->
           <div class="header-bottom-bar">
             <nav class="desktop-nav">
               <ul class="desktop-menu">
-                <li class="menu-item active">
-                  <a href="<?= site_url() ?>">HOME</a>
-                </li>
+                <li class="menu-item active"><a href="<?= site_url() ?>">HOME</a></li>
                 <li class="menu-item has-dropdown">
-                  <a href="<?= site_url('about') ?>" class="dropdown-toggle-link">
-                    ABOUT US <i class="bi bi-chevron-down dropdown-arrow"></i>
-                  </a>
+                  <a href="<?= site_url('about') ?>" class="dropdown-toggle-link">ABOUT US <i class="bi bi-chevron-down dropdown-arrow"></i></a>
                   <ul class="dropdown-menu-list">
                     <li><a href="<?= site_url('about') ?>">About Us</a></li>
                     <li><a href="<?= site_url('why-choose-us') ?>">Why Choose Us</a></li>
@@ -56,9 +46,7 @@
                   </ul>
                 </li>
                 <li class="menu-item has-dropdown">
-                  <a href="<?= site_url('services') ?>" class="dropdown-toggle-link">
-                    SERVICES <i class="bi bi-chevron-down dropdown-arrow"></i>
-                  </a>
+                  <a href="" class="dropdown-toggle-link">SERVICES <i class="bi bi-chevron-down dropdown-arrow"></i></a>
                   <ul class="dropdown-menu-list">
                     <li><a href="<?= site_url('services/household-shifting') ?>">Household Shifting</a></li>
                     <li><a href="<?= site_url('services/office-relocation') ?>">Office Relocation</a></li>
@@ -70,15 +58,9 @@
                     <li><a href="<?= site_url('services/domestic-shifting') ?>">Domestic Shifting</a></li>
                   </ul>
                 </li>
-                <li class="menu-item">
-                  <a href="<?= site_url('location') ?>">LOCATIONS</a>
-                </li>
-                <li class="menu-item">
-                  <a href="<?= site_url('gallery') ?>">GALLERY</a>
-                </li>
-                <li class="menu-item">
-                  <a href="<?= site_url('contacts') ?>">CONTACT</a>
-                </li>
+                <li class="menu-item"><a href="<?= site_url('location') ?>">LOCATIONS</a></li>
+                <li class="menu-item"><a href="<?= site_url('gallery') ?>">GALLERY</a></li>
+                <li class="menu-item"><a href="<?= site_url('contacts') ?>">CONTACT</a></li>
               </ul>
             </nav>
 
@@ -88,6 +70,7 @@
               <i class="bi bi-arrow-right btn-quote-arrow"></i>
             </button>
           </div>
+          
         </div>
       </div>
     </div>
@@ -97,7 +80,7 @@
     <div class="mobile-navbar-bar">
       <!-- Logo -->
       <a href="<?= base_url() ?>" class="mobile-logo-link">
-        <img src="<?= base_url('assets/images/logo.svg') ?>" alt="Tranways India Logo" class="mobile-logo-img" loading="lazy">
+        <img src="<?= base_url('assets/images/logo/logo.png') ?>" alt="Tranways India Packers and Movers" class="mobile-logo-img" loading="lazy">
       </a>
 
       <button class="mobile-hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
@@ -184,8 +167,7 @@
 
     <!-- Drawer Sticky Footer CTAs -->
     <div class="drawer-footer-ctas">
-      <a href="tel:<?= $phone ?>" class="btn-drawer-call">
-        <i class="bi bi-telephone-fill"></i>CALL NOW
+      <a href="<?=$phonehtml?>" class="btn-drawer-call"><?=$phone?><i class="bi bi-telephone-fill"></i>CALL NOW
       </a>
       <button class="btn-drawer-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
         <i class="bi bi-box-seam"></i>GET A QUOTE

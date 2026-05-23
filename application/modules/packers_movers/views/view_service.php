@@ -142,7 +142,7 @@ foreach ($cities as $ct) {
                         <div class="bg-orange text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
                             <i class="bi bi-info-circle fs-4"></i>
                         </div>
-                        <h2 class="fw-bold text-dark mb-0">About <?= $company3 ?> in <?= $city ?></h2>
+                        <h2 class="text-dark mb-0">About <?= $company3 ?> in <?= $city ?></h2>
                     </div>
                     <div class="text-muted lh-lg fs-6">
                         <p>Welcome to the most trusted moving experts in <strong><?= $city ?></strong>. For years, we have been helping families, professionals, and corporate businesses relocate safely and smoothly. Our <?= $city ?> branch is equipped with state-of-the-art packing materials, closed container trucks, and highly trained local staff who understand the nuances of shifting within this city.</p>
@@ -156,7 +156,7 @@ foreach ($cities as $ct) {
                         <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
                             <i class="bi bi-boxes fs-4"></i>
                         </div>
-                        <h3 class="fw-bold text-dark mb-0">Moving Services in <?= $city ?></h3>
+                        <h3 class="text-dark mb-0">Moving Services in <?= $city ?></h3>
                     </div>
                     <div class="text-muted lh-lg city-seo-text">
                         <?php if(!empty(trim($htmlcontent))): ?>
@@ -177,7 +177,7 @@ foreach ($cities as $ct) {
 
                 <!-- Box 3: Why Choose Us Content -->
                 <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border border-light">
-                    <h3 class="fw-bold text-dark mb-4">Why Choose Us for Your <?= $city ?> Move?</h3>
+                    <h3 class="text-dark mb-4">Why Choose Us for Your <?= $city ?> Move?</h3>
                     <div class="text-muted lh-lg">
                         <?= !empty(trim($htmlcontent2)) ? $htmlcontent2 : '<p>We are distinguished by our commitment to quality. Our dedicated move coordinators handle your relocation from start to finish. With no hidden costs and a specialized local fleet, we ensure a premium experience.</p>' ?>
                     </div>
@@ -191,15 +191,12 @@ foreach ($cities as $ct) {
 
                     <!-- Sidebar Box 2: Quick Contact -->
                     <div class="bg-primary text-white rounded-4 p-4 text-center shadow-sm mb-4 position-relative overflow-hidden">
-                        <h4 class="fw-bold mb-3 position-relative z-index-1">Need Urgent Help?</h4>
+                        <h4 class="mb-3 position-relative z-index-1">Need Urgent Help?</h4>
                         <p class="small text-white-50 mb-4 position-relative z-index-1">Our <?= $city ?> support team is available 24/7.</p>
                         
-                        <a href="tel:<?= $this->comp['phone'] ?>" class="btn btn-light w-100 fw-bold py-3 mb-3 text-primary position-relative z-index-1">
-                            <i class="bi bi-telephone-fill me-2"></i> <?= $this->comp['phone'] ?>
-                        </a>
+                        <a href="<?=$phonehtml?>" class="btn btn-light w-100 fw-bold py-3 mb-3 text-primary position-relative z-index-1"><?=$phone?><i class="bi bi-telephone-fill me-2"></i> <?=$phone?><?=$phone?></a>
                         
-                        <?php $whatsapp = isset($this->comp['whatsapp']) ? str_replace(' ', '', $this->comp['whatsapp']) : ''; ?>
-                        <a href="https://wa.me/91<?= $whatsapp ?>" target="_blank" class="btn btn-success w-100 fw-bold py-3 position-relative z-index-1">
+                        <a href="<?=$whatsapphtml?>" target="_blank" class="btn btn-success w-100 fw-bold py-3 position-relative z-index-1">
                             <i class="bi bi-whatsapp me-2"></i> WhatsApp Us
                         </a>
                     </div>
@@ -207,7 +204,7 @@ foreach ($cities as $ct) {
                     <!-- Sidebar Box 3: Coverage Area -->
                     <div class="bg-white rounded-4 p-4 border border-light shadow-sm text-center">
                         <div class="text-orange fs-1 mb-2"><i class="bi bi-pin-map-fill"></i></div>
-                        <h5 class="fw-bold text-dark">Serving All of <?= $city ?></h5>
+                        <h5 class="text-dark">Serving All of <?= $city ?></h5>
                         <p class="text-muted small mb-0">We cover every neighborhood, residential society, and commercial hub in and around the city.</p>
                     </div>
 
@@ -220,7 +217,7 @@ foreach ($cities as $ct) {
                 <!-- Core Expertise / Services Grid -->
                 <div class="dynamic-services-section p-4 p-md-5 rounded-4 shadow-sm mb-5" style="background-color: #051124;">
                     <div class="text-center mb-5">
-                        <h2 class="display-6 fw-bold text-white mb-3">Our Core Expertise</h2>
+                        <h2 class="display-6 text-white mb-3">Our Core Expertise</h2>
                         <p class="text-white-50 mx-auto" style="max-width: 600px;">Tailored logistics and moving solutions designed perfectly for the residents of <?= $city ?>.</p>
                     </div>
                     
@@ -228,28 +225,28 @@ foreach ($cities as $ct) {
                         <div class="col-md-6 col-lg-3">
                             <div class="service-glare-card p-4 text-center rounded-4 border border-secondary border-opacity-25 h-100">
                                 <div class="text-orange fs-1 mb-3"><i class="bi bi-house-door"></i></div>
-                                <h5 class="fw-bold text-white mb-2">Local Shifting</h5>
+                                <h5 class="text-white mb-2">Local Shifting</h5>
                                 <p class="small text-white-50 mb-0">Lightning-fast moves across neighborhoods inside <?= $city ?> with extreme care.</p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="service-glare-card p-4 text-center rounded-4 border border-secondary border-opacity-25 h-100">
                                 <div class="text-orange fs-1 mb-3"><i class="bi bi-globe-central-south-asia"></i></div>
-                                <h5 class="fw-bold text-white mb-2">Domestic Move</h5>
+                                <h5 class="text-white mb-2">Domestic Move</h5>
                                 <p class="small text-white-50 mb-0">Moving out of <?= $city ?>? We provide seamless Pan-India relocation services.</p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="service-glare-card p-4 text-center rounded-4 border border-secondary border-opacity-25 h-100">
                                 <div class="text-orange fs-1 mb-3"><i class="bi bi-building"></i></div>
-                                <h5 class="fw-bold text-white mb-2">Office Relocation</h5>
+                                <h5 class="text-white mb-2">Office Relocation</h5>
                                 <p class="small text-white-50 mb-0">Zero-downtime IT and furniture moving for corporates and startups.</p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="service-glare-card p-4 text-center rounded-4 border border-secondary border-opacity-25 h-100">
                                 <div class="text-orange fs-1 mb-3"><i class="bi bi-car-front"></i></div>
-                                <h5 class="fw-bold text-white mb-2">Car Transport</h5>
+                                <h5 class="text-white mb-2">Car Transport</h5>
                                 <p class="small text-white-50 mb-0">Enclosed vehicle carriers keeping your prized automobiles scratch-free.</p>
                             </div>
                         </div>
@@ -262,7 +259,7 @@ foreach ($cities as $ct) {
                     <div class="row align-items-center g-5">
                         <div class="col-lg-5">
                             <span class="text-orange fw-bold tracking-wider text-uppercase mb-2 d-block">Got Questions?</span>
-                            <h2 class="display-6 fw-bold text-dark mb-4">Frequently Asked Questions</h2>
+                            <h2 class="display-6 text-dark mb-4">Frequently Asked Questions</h2>
                             <p class="text-muted mb-4">Everything you need to know about shifting locally or domestically from <?= $city ?>.</p>
                             <div class="d-flex align-items-center gap-3 p-3 bg-light rounded-pill d-inline-flex border">
                                 <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">

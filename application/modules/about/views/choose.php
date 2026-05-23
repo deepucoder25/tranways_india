@@ -20,7 +20,7 @@
       <div class="col-lg-6">
         <div class="choose-visual-wrapper position-relative">
           <div class="choose-main-img-container overflow-hidden rounded-4 shadow-lg border border-3 border-white">
-            <img src="<?= base_url('assets/images/about_main.png') ?>" alt="Tranways India Packers Shifting Crew" class="img-fluid w-100" onerror="this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80'">
+            <img src="<?= base_url('assets/images/about_main.png') ?>" loading="lazy" alt="<?=$company3?> Packers Shifting Crew" class="img-fluid w-100 choose-main-img">
           </div>
           <div class="floating-badge-choose position-absolute bg-white shadow-lg p-3 rounded-3 border-start border-4 border-orange bottom-left-badge-choose">
             <div class="d-flex align-items-center gap-2">
@@ -40,7 +40,7 @@
           <span class="section-subtitle-badge">— • THE TRANWAYS DIFFERENCE • —</span>
           <h2 class="choose-main-title mt-2 mb-4">Shifting Done Right: <span class="text-orange">Safe, Secure & Direct</span></h2>
           <p class="lead text-muted mb-4">
-            Relocating your household, office, or vehicle can feel overwhelming. At <span class="text-orange font-weight-bold">Tranways India</span>, we have built our shifting ecosystem around **trust, safety, and absolute transparency**.
+            Relocating your household, office, or vehicle can feel overwhelming. At <span class="text-orange font-weight-bold"><?=$company3?></span>, we have built our shifting ecosystem around **trust, safety, and absolute transparency**.
           </p>
           <p class="text-muted mb-4">
             We don't rely on third-party sub-contractors. Our packing crew is fully certified, our logistics vehicle fleet is privately owned, and our IBA accreditation ensures that your bank claims and shifting allowances are handled with clean regulatory compliance.
@@ -177,15 +177,13 @@
     <div class="cta-inner-card bg-white shadow-md rounded-4 p-5 max-w-800 mx-auto border border-light">
       <h3 class="cta-title mb-3">Ready to Experience <span class="text-orange">Stress-Free Moving</span>?</h3>
       <p class="cta-desc text-muted mb-4 max-w-600 mx-auto">
-        Join thousands of satisfied Indian families and corporate offices who trusted Tranways India. Get a free, precise on-site shifting quote today.
+        Join thousands of satisfied Indian families and corporate offices who trusted <?=$company3?>. Get a free, precise on-site shifting quote today.
       </p>
       <div class="cta-btn-group d-flex justify-content-center flex-wrap gap-3">
         <button class="btn btn-blue px-4 py-3 rounded-3 d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
           <i class="bi bi-box-seam"></i> GET A FREE QUOTE
         </button>
-        <a href="tel:<?= $phone ?>" class="btn btn-outline-orange px-4 py-3 rounded-3 d-flex align-items-center gap-2">
-          <i class="bi bi-telephone-fill"></i> CALL NOW
-        </a>
+        <a href="<?=$phonehtml?>" class="btn btn-outline-orange px-4 py-3 rounded-3 d-flex align-items-center gap-2"><?=$phone?><i class="bi bi-telephone-fill"></i> CALL NOW<?=$phone?></a>
       </div>
     </div>
   </div>

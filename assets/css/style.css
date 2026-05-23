@@ -326,6 +326,26 @@ body {
   background-color: var(--primary-orange);
 }
 
+.btn-orange {
+  background-color: var(--primary-orange);
+  color: var(--white);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+  background-color: var(--primary-orange-hover) !important;
+  color: var(--white) !important;
+  outline: none !important;
+  box-shadow: 0 8px 20px rgba(243, 112, 33, 0.4) !important;
+  transform: translateY(-3px);
+}
+
+.btn-orange:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(243, 112, 33, 0.4) !important;
+}
+
 /* ----- WHY CHOOSE US CUSTOMS ----- */
 .choose-visual-wrapper {
   padding: 20px 0;
@@ -720,3 +740,31 @@ body {
   }
 }
 
+/* Contact Page Styles */
+.hs-main-section {
+  margin-top: -60px;
+  z-index: 10;
+}
+
+.hs-card-premium {
+  transition: transform 0.3s ease;
+}
+
+.hs-card-premium:hover {
+  transform: translateY(-10px);
+}
+
+.hs-icon-box {
+  width: 60px;
+  height: 60px;
+}
+
+.contact-map-iframe {
+  border: 0;
+  min-height: 500px;
+  border-radius: 12px;
+}
+
+.map-overlay-gradient {
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}

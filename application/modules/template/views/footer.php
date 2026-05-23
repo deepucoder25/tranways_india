@@ -24,17 +24,17 @@
           <div class="col-lg-3 col-md-6 col-sm-12 footer-column-logo">
             <div class="footer-logo-area">
               <a href="<?= base_url() ?>" class="footer-logo-link">
-                <img src="<?= base_url('assets/images/logo.svg') ?>" alt="Tranways India Packers and Movers" class="footer-logo-img">
+                <img src="<?= base_url('assets/images/logo/logo.png') ?>" alt="<?=$company3?>" class="footer-logo-img">
               </a>
             </div>
             <p class="footer-company-desc">
-              <span class="text-orange">Tranways India</span> <?= $company3 ?> is a trusted relocation partner, offering safe, secure and hassle-free moving services across India. Your satisfaction is our commitment.
+              <span class="text-orange"><?=$company3?></span>is a trusted relocation partner, offering safe, secure and hassle-free moving services across India. Your satisfaction is our commitment.
             </p>
             <div class="footer-social-links">
-              <a href="<?= !empty($facebookhtml) ? $facebookhtml : '#' ?>" class="social-circle" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="<?= !empty($instagramhtml) ? $instagramhtml : '#' ?>" class="social-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="<?= !empty($twitterhtml) ? $twitterhtml : '#' ?>" class="social-circle" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-              <a href="<?= !empty($linkedinhtml) ? $linkedinhtml : '#' ?>" class="social-circle" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="<?=$facebookhtml?>" class="social-circle" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="<?=$instagramhtml?>" class="social-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="<?= $twitterhtml?>" class="social-circle" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="<?=$linkedinhtml ?>" class="social-circle" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
 
@@ -44,7 +44,6 @@
             <ul class="footer-links-list">
               <li><a href="<?= site_url() ?>"><i class="bi bi-chevron-right"></i>Home</a></li>
               <li><a href="<?= site_url('about') ?>"><i class="bi bi-chevron-right"></i>About Us</a></li>
-              <li><a href="<?= site_url('services') ?>"><i class="bi bi-chevron-right"></i>Our Services</a></li>
               <li><a href="<?= site_url('location') ?>"><i class="bi bi-chevron-right"></i>Location</a></li>
               <li><a href="<?= site_url('gallery') ?>"><i class="bi bi-chevron-right"></i>Gallery</a></li>
               <li><a href="<?= site_url('blog') ?>"><i class="bi bi-chevron-right"></i>Blog</a></li>
@@ -184,7 +183,7 @@
         <div class="bottom-map-graphic"></div>
         
         <div class="bottom-copyright-text">
-          &copy; <?= date('Y') ?> <span class="text-orange">Tranways India</span> <?= $company3 ?>. All Rights Reserved.
+          &copy; <?= date('Y') ?> <span class="text-orange"><?=$company3?></span> <?= $company3 ?>. All Rights Reserved.
         </div>
         
         <div class="bottom-links-menu">
@@ -203,7 +202,7 @@
 
     <!-- Mobile Fixed Bottom Action Bar -->
     <div class="mobile-bottom-actions d-flex d-lg-none">
-      <a href="tel:<?= $phone ?>" class="bottom-action-btn call-btn">
+      <a href="<?= $phonehtml ?>" class="bottom-action-btn call-btn">
         <i class="bi bi-telephone-fill pulse-anim"></i> Call Now
       </a>
       <button class="bottom-action-btn quote-btn" data-bs-toggle="modal" data-bs-target="#qteModal">

@@ -52,7 +52,7 @@
             <!-- Number Badge -->
             <div class="process-number-badge shadow-sm">01</div>
             
-            <h4 class="fw-bold process-card-title mb-3">ENQUIRE</h4>
+            <h4 class="process-card-title mb-3">ENQUIRE</h4>
             <p class="text-muted process-card-desc mb-0">
               Share your moving requirements with us via call or online form.
             </p>
@@ -79,7 +79,7 @@
 
           <div class="process-card shadow-sm p-4 border border-light">
             <div class="process-number-badge shadow-sm">02</div>
-            <h4 class="fw-bold process-card-title mb-3">GET QUOTE</h4>
+            <h4 class="process-card-title mb-3">GET QUOTE</h4>
             <p class="text-muted process-card-desc mb-0">
               We provide a free survey (virtual/physical) and a transparent price estimate.
             </p>
@@ -106,7 +106,7 @@
 
           <div class="process-card shadow-sm p-4 border border-light">
             <div class="process-number-badge shadow-sm">03</div>
-            <h4 class="fw-bold process-card-title mb-3">PLAN & SCHEDULE</h4>
+            <h4 class="process-card-title mb-3">PLAN & SCHEDULE</h4>
             <p class="text-muted process-card-desc mb-0">
               We plan every detail and schedule your move at your convenience.
             </p>
@@ -133,7 +133,7 @@
 
           <div class="process-card shadow-sm p-4 border border-light">
             <div class="process-number-badge shadow-sm">04</div>
-            <h4 class="fw-bold process-card-title mb-3">PACK & MOVE</h4>
+            <h4 class="process-card-title mb-3">PACK & MOVE</h4>
             <p class="text-muted process-card-desc mb-0">
               Our expert team carefully packs, loads and transports your belongings safely.
             </p>
@@ -156,7 +156,7 @@
 
           <div class="process-card shadow-sm p-4 border border-light">
             <div class="process-number-badge shadow-sm">05</div>
-            <h4 class="fw-bold process-card-title mb-3">DELIVER</h4>
+            <h4 class="process-card-title mb-3">DELIVER</h4>
             <p class="text-muted process-card-desc mb-0">
               We deliver your items to your new location on time and with care.
             </p>

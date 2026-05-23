@@ -62,7 +62,7 @@
             <div class="d-flex align-items-center gap-3">
               <div class="testimonial-avatar avatar-blue">R</div>
               <div>
-                <h4 class="fw-bold testimonial-author mb-1">Rahul Sharma</h4>
+                <h4 class="testimonial-author mb-1">Rahul Sharma</h4>
                 <div class="d-flex align-items-center gap-1 text-muted testimonial-location">
                   <i class="bi bi-geo-alt-fill text-orange"></i>
                   <span>Bangalore</span>
@@ -97,7 +97,7 @@
             <div class="d-flex align-items-center gap-3">
               <div class="testimonial-avatar avatar-orange">P</div>
               <div>
-                <h4 class="fw-bold testimonial-author mb-1">Priya Mehta</h4>
+                <h4 class="testimonial-author mb-1">Priya Mehta</h4>
                 <div class="d-flex align-items-center gap-1 text-muted testimonial-location">
                   <i class="bi bi-geo-alt-fill text-orange"></i>
                   <span>Pune</span>
@@ -132,7 +132,7 @@
             <div class="d-flex align-items-center gap-3">
               <div class="testimonial-avatar avatar-blue">V</div>
               <div>
-                <h4 class="fw-bold testimonial-author mb-1">Vikram Soni</h4>
+                <h4 class="testimonial-author mb-1">Vikram Soni</h4>
                 <div class="d-flex align-items-center gap-1 text-muted testimonial-location">
                   <i class="bi bi-geo-alt-fill text-orange"></i>
                   <span>Delhi</span>
