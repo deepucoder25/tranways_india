@@ -7,8 +7,8 @@ class Contacts extends MX_Controller
     }
     function index()
     {
-        $data['title'] = "";
-        $data['description'] = "";
+        $data['title'] = "Contact Us | " . ($this->comp['company3']) . " - Packers and Movers";
+        $data['description'] = "Get in touch with " . ($this->comp['company3']) . " for the best and most reliable packing and moving services. Request a free quote, call our 24/7 support, or visit our nearest branch today.";
         $data['module'] = "contacts";
         $data['view_file'] = "contacts";
         echo Modules::run('template/layout2', $data);

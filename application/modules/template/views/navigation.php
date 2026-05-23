@@ -194,12 +194,39 @@
   </div>
 
   <script>
-    $(function () {
-      $('#hamburgerBtn').click(() => $('#fullscreenMenu, #menuOverlay').addClass('active'));
-      $('#closeMenuBtn, #menuOverlay').click(() => $('#fullscreenMenu, #menuOverlay').removeClass('active'));
-      $('#drawerServicesToggle, #drawerAboutToggle').click(function (e) {
-        e.preventDefault();
-        $(this).closest('.has-submenu').toggleClass('open');
+    document.addEventListener("DOMContentLoaded", function () {
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const closeMenuBtn = document.getElementById('closeMenuBtn');
+      const fullscreenMenu = document.getElementById('fullscreenMenu');
+      const menuOverlay = document.getElementById('menuOverlay');
+      
+      const openMenu = () => {
+        if (fullscreenMenu) fullscreenMenu.classList.add('active');
+        if (menuOverlay) menuOverlay.classList.add('active');
+      };
+      
+      const closeMenu = () => {
+        if (fullscreenMenu) fullscreenMenu.classList.remove('active');
+        if (menuOverlay) menuOverlay.classList.remove('active');
+      };
+
+      if (hamburgerBtn) hamburgerBtn.addEventListener('click', openMenu);
+      if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMenu);
+      if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+
+      const toggles = [
+        document.getElementById('drawerServicesToggle'),
+        document.getElementById('drawerAboutToggle')
+      ];
+
+      toggles.forEach(toggle => {
+        if (toggle) {
+          toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const parent = this.closest('.has-submenu');
+            if (parent) parent.classList.toggle('open');
+          });
+        }
       });
     });
   </script>
