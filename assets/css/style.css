@@ -6,24 +6,17 @@
 @import "home.css";
 /* ----- ROOT CSS VARIABLES ----- */
 :root {
-  --primary-green: #0033a0;
-  --primary-green-hover: #00226b;
-  --primary-blue: #0033a0;
-  --primary-blue-hover: #00226b;
-  --primary-orange: #f37021;
-  --primary-orange-hover: #e65c00;
-  --text-dark: #333333;
-  --text-muted: #666666;
-  --text-light: #999999;
+  --primary-color: #3b28f6;
+  --topbar-bg: #0b0f19;
+  --topbar-text: #a0aabf;
+  --topbar-icon-bg: #1a1f2e;
+  --container-max-width: 1200px;
   --white: #ffffff;
-  --bg-light: #f8f9fa;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.07);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
-  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  --transition-elastic: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --text-dark: #111827;
+  --text-gray: #6b7280;
+  --bg-body: #f4f7fb;
+  --company-name: "MoveMasters";
 }
-
 /* ----- GLOBAL RESET & PREMIUM STYLE ----- */
 * {
   margin: 0;
