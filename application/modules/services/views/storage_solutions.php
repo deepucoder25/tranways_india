@@ -205,7 +205,8 @@
             <ul class="list-unstyled hs-services-list mb-0">
               <li><a href="<?= site_url('services/household-shifting') ?>">Household Shifting <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/office-relocation') ?>">Office Shifting <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/vehicle-transport') ?>">Vehicle Transportation <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/bike-transportation') ?>">Bike Transportation <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/car-transportation') ?>">Car Transportation <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/packing-unpacking') ?>">Packing & Unpacking <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/loading-unloading') ?>">Loading & Unloading <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/storage-solutions') ?>" class="active">Warehousing Service <i class="bi bi-chevron-right"></i></a></li>

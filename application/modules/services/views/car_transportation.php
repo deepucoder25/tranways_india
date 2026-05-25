@@ -1,4 +1,4 @@
-<?php $this->load->view('template/inner_hero', ['page_title' => 'Loading & Unloading', 'parent_title' => 'Services', 'parent_link' => 'services', 'bg_image' => 'assets/images/services/loading_unloading_hero.png']); ?>
+<?php $this->load->view('template/inner_hero', ['page_title' => 'Car Transportation', 'parent_title' => 'Services', 'parent_link' => 'services', 'bg_image' => 'assets/images/services/vehicle_transport_hero.png']); ?>
 
 <!-- Main Content Area with Sidebar -->
 <section class="hs-main-section py-5 hs-bg-pattern">
@@ -10,34 +10,33 @@
         
         <!-- Featured Image & Intro -->
         <div class="hs-card-premium bg-white rounded-4 shadow-sm p-4 p-md-5 mb-5 position-relative border-0">
-          <div class="hs-premium-badge">Safe Handling</div>
-          <img src="<?= base_url('assets/images/services/loading_unloading_hero.png') ?>" alt="<?= $company3 ?> Loading and Unloading" class="img-fluid rounded-4 mb-4 w-100 object-fit-cover shadow" style="max-height: 450px;" loading="lazy">
+          <div class="hs-premium-badge">100% Safe Transit</div>
+          <img src="<?= base_url('assets/images/services/vehicle_transport_hero.png') ?>" alt="<?= $company3 ?> Car Transportation" class="img-fluid rounded-4 mb-4 w-100 object-fit-cover shadow" style="max-height: 450px;" loading="lazy">
           
-          <h2 class="display-6 text-dark mb-4">Expert <span class="text-primary-blue">Loading & Unloading</span></h2>
-          <p class="text-muted fs-5 mb-4 lh-lg">
-            Improper loading is the number one cause of damage during transit. At <strong><?= $company3 ?></strong>, our highly trained labor force uses specialized techniques to lift, load, and arrange your belongings safely. We carefully balance the weight distribution inside the moving truck to prevent any shifting during transit, ensuring absolute safety for both heavy furniture and fragile cartons.
+          <h2 class="display-6 text-dark mb-4">Secure & Reliable <span class="text-primary-blue">Car Transportation</span></h2>
+            Your vehicle is one of your most valuable assets. Transporting it requires specialized equipment and experienced professionals. At <strong><?= $company3 ?></strong>, we provide dedicated enclosed car carriers services across India. We ensure your car is protected from weather, dust, and road debris, delivering it completely scratch-free to your new location.
           </p>
           
           <div class="row g-4 mt-3">
             <div class="col-md-6">
               <div class="hs-feature-box d-flex align-items-center p-3 rounded-3 border">
                 <div class="hs-feature-icon text-orange me-3">
-                  <i class="bi bi-person-arms-up fs-2"></i>
+                  <i class="bi bi-truck fs-2"></i>
                 </div>
                 <div>
-                  <h5 class="mb-1">Trained Workforce</h5>
-                  <p class="text-muted small mb-0">Professional lifting techniques.</p>
+                  <h5 class="mb-1">Enclosed Carriers</h5>
+                  <p class="text-muted small mb-0">Protection from dust and weather.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <div class="hs-feature-box d-flex align-items-center p-3 rounded-3 border">
                 <div class="hs-feature-icon text-primary-blue me-3">
-                  <i class="bi bi-symmetry-horizontal fs-2"></i>
+                  <i class="bi bi-geo-alt-fill fs-2"></i>
                 </div>
                 <div>
-                  <h5 class="mb-1">Weight Distribution</h5>
-                  <p class="text-muted small mb-0">Strategic truck loading.</p>
+                  <h5 class="mb-1">Live Tracking</h5>
+                  <p class="text-muted small mb-0">GPS-enabled fleet tracking.</p>
                 </div>
               </div>
             </div>
@@ -55,29 +54,29 @@
             <div class="col-sm-6">
               <div class="hs-process-box p-4 rounded-4 bg-light h-100 position-relative overflow-hidden">
                 <div class="hs-process-num">01</div>
-                <h5 class="text-dark position-relative z-index-2">Safety Briefing</h5>
-                <p class="text-muted small mb-0 position-relative z-index-2">Our supervisor conducts a quick safety assessment of stairs, doors, and hallways.</p>
+                <h5 class="text-dark position-relative z-index-2">Initial Inspection</h5>
+                <p class="text-muted small mb-0 position-relative z-index-2">We thoroughly inspect your vehicle and document its condition before loading.</p>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="hs-process-box p-4 rounded-4 bg-light h-100 position-relative overflow-hidden">
                 <div class="hs-process-num">02</div>
-                <h5 class="text-dark position-relative z-index-2">Heavy Lifting</h5>
-                <p class="text-muted small mb-0 position-relative z-index-2">Using lifting straps and dollies to safely move heavy furniture to the truck.</p>
+                <h5 class="text-dark position-relative z-index-2">Secure Loading</h5>
+                <p class="text-muted small mb-0 position-relative z-index-2">Hydraulic ramps and heavy-duty wheel straps secure your vehicle in place.</p>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="hs-process-box p-4 rounded-4 bg-light h-100 position-relative overflow-hidden">
                 <div class="hs-process-num">03</div>
-                <h5 class="text-dark position-relative z-index-2">Strategic Loading</h5>
-                <p class="text-muted small mb-0 position-relative z-index-2">Heavy items placed at the base, with fragile items safely secured on top.</p>
+                <h5 class="text-dark position-relative z-index-2">GPS Transit</h5>
+                <p class="text-muted small mb-0 position-relative z-index-2">We transport your vehicle safely while providing you with live GPS tracking.</p>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="hs-process-box p-4 rounded-4 bg-light h-100 position-relative overflow-hidden">
                 <div class="hs-process-num">04</div>
-                <h5 class="text-dark position-relative z-index-2">Careful Unloading</h5>
-                <p class="text-muted small mb-0 position-relative z-index-2">Systematic unloading at the destination and placement in designated rooms.</p>
+                <h5 class="text-dark position-relative z-index-2">Safe Delivery</h5>
+                <p class="text-muted small mb-0 position-relative z-index-2">Careful unloading and final inspection at your doorstep.</p>
               </div>
             </div>
           </div>
@@ -95,12 +94,12 @@
                 <div class="d-flex text-warning mb-2">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-                <p class="fst-italic text-muted small mb-3">"I lived on the 4th floor with no elevator. The loading team handled my heavy double bed and wardrobe effortlessly without a single scratch to the walls."</p>
+                <p class="fst-italic text-muted small mb-3">"I transported my luxury SUV from Mumbai to Delhi. It arrived perfectly on time without a single speck of dust on it."</p>
                 <div class="d-flex align-items-center">
-                  <div class="hs-reviewer-avatar bg-primary-blue text-white rounded-circle d-flex align-items-center justify-content-center me-3">S</div>
+                  <div class="hs-reviewer-avatar bg-primary-blue text-white rounded-circle d-flex align-items-center justify-content-center me-3">V</div>
                   <div>
-                    <h6 class="mb-0">Sunil Verma</h6>
-                    <span class="small text-muted">Customer</span>
+                    <h6 class="mb-0">Vikram Singh</h6>
+                    <span class="small text-muted">Business Owner</span>
                   </div>
                 </div>
               </div>
@@ -110,12 +109,12 @@
                 <div class="d-flex text-warning mb-2">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
-                <p class="fst-italic text-muted small mb-3">"The way they organized the truck was like playing Tetris perfectly. Nothing moved during the 500km journey."</p>
+                <p class="fst-italic text-muted small mb-3">"Very reliable service. Their live tracking feature gave me complete peace of mind while my bike was in transit."</p>
                 <div class="d-flex align-items-center">
-                  <div class="hs-reviewer-avatar bg-orange text-white rounded-circle d-flex align-items-center justify-content-center me-3">M</div>
+                  <div class="hs-reviewer-avatar bg-orange text-white rounded-circle d-flex align-items-center justify-content-center me-3">N</div>
                   <div>
-                    <h6 class="mb-0">Manish Singh</h6>
-                    <span class="small text-muted">Customer</span>
+                    <h6 class="mb-0">Neha Kapoor</h6>
+                    <span class="small text-muted">Software Engineer</span>
                   </div>
                 </div>
               </div>
@@ -134,12 +133,12 @@
             <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#hsFaq1">
-                  How do you ensure furniture isn't scratched while loading?
+                  Are your car carriers open or enclosed?
                 </button>
               </h2>
               <div id="hsFaq1" class="accordion-collapse collapse show" data-bs-parent="#hsFaqAccordion">
                 <div class="accordion-body text-muted small">
-                  We use heavy-duty moving blankets and edge protectors on all large furniture pieces. Additionally, our staff is trained in specialized lifting techniques to avoid scraping against walls or doors.
+                  We highly recommend and utilize fully enclosed car carriers for our vehicle transport services. This protects your car from adverse weather conditions, highway dust, and potential road debris.
                 </div>
               </div>
             </div>
@@ -147,12 +146,12 @@
             <div class="accordion-item border-0 mb-3 rounded-3 shadow-sm overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed bg-white text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#hsFaq2">
-                  Do you dismantle large furniture before loading?
+                  Can I leave personal belongings in the car during transport?
                 </button>
               </h2>
               <div id="hsFaq2" class="accordion-collapse collapse" data-bs-parent="#hsFaqAccordion">
                 <div class="accordion-body text-muted small">
-                  Yes, our crew is equipped with the necessary tools to dismantle large items like beds, dining tables, and wardrobes before loading, and we reassemble them securely at the destination.
+                  For safety and legal reasons, we request that you remove all personal belongings, especially valuables and electronics, from the vehicle before it is loaded onto our carriers.
                 </div>
               </div>
             </div>
@@ -206,9 +205,9 @@
               <li><a href="<?= site_url('services/household-shifting') ?>">Household Shifting <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/office-relocation') ?>">Office Shifting <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/bike-transportation') ?>">Bike Transportation <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/car-transportation') ?>">Car Transportation <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/car-transportation') ?>" class="active">Car Transportation <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/packing-unpacking') ?>">Packing & Unpacking <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/loading-unloading') ?>" class="active">Loading & Unloading <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/loading-unloading') ?>">Loading & Unloading <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/storage-solutions') ?>">Warehousing Service <i class="bi bi-chevron-right"></i></a></li>
             </ul>
           </div>

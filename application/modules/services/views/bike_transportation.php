@@ -1,4 +1,4 @@
-<?php $this->load->view('template/inner_hero', ['page_title' => 'Vehicle Transportation', 'parent_title' => 'Services', 'parent_link' => 'services', 'bg_image' => 'assets/images/services/vehicle_transport_hero.png']); ?>
+<?php $this->load->view('template/inner_hero', ['page_title' => 'Bike Transportation', 'parent_title' => 'Services', 'parent_link' => 'services', 'bg_image' => 'assets/images/services/vehicle_transport_hero.png']); ?>
 
 <!-- Main Content Area with Sidebar -->
 <section class="hs-main-section py-5 hs-bg-pattern">
@@ -11,11 +11,10 @@
         <!-- Featured Image & Intro -->
         <div class="hs-card-premium bg-white rounded-4 shadow-sm p-4 p-md-5 mb-5 position-relative border-0">
           <div class="hs-premium-badge">100% Safe Transit</div>
-          <img src="<?= base_url('assets/images/services/vehicle_transport_hero.png') ?>" alt="<?= $company3 ?> Vehicle Transportation" class="img-fluid rounded-4 mb-4 w-100 object-fit-cover shadow" style="max-height: 450px;" loading="lazy">
+          <img src="<?= base_url('assets/images/services/vehicle_transport_hero.png') ?>" alt="<?= $company3 ?> Bike Transportation" class="img-fluid rounded-4 mb-4 w-100 object-fit-cover shadow" style="max-height: 450px;" loading="lazy">
           
-          <h2 class="display-6 text-dark mb-4">Secure & Reliable <span class="text-primary-blue">Vehicle Transportation</span></h2>
-          <p class="text-muted fs-5 mb-4 lh-lg">
-            Your vehicle is one of your most valuable assets. Transporting it requires specialized equipment and experienced professionals. At <strong><?= $company3 ?></strong>, we provide dedicated enclosed car carriers and specialized bike transport services across India. We ensure your vehicle is protected from weather, dust, and road debris, delivering it completely scratch-free to your new location.
+          <h2 class="display-6 text-dark mb-4">Secure & Reliable <span class="text-primary-blue">Bike Transportation</span></h2>
+            Your vehicle is one of your most valuable assets. Transporting it requires specialized equipment and experienced professionals. At <strong><?= $company3 ?></strong>, we provide dedicated specialized bike transport services across India. We ensure your bike is protected from weather, dust, and road debris, delivering it completely scratch-free to your new location.
           </p>
           
           <div class="row g-4 mt-3">
@@ -205,7 +204,8 @@
             <ul class="list-unstyled hs-services-list mb-0">
               <li><a href="<?= site_url('services/household-shifting') ?>">Household Shifting <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/office-relocation') ?>">Office Shifting <i class="bi bi-chevron-right"></i></a></li>
-              <li><a href="<?= site_url('services/vehicle-transport') ?>" class="active">Vehicle Transportation <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/bike-transportation') ?>" class="active">Bike Transportation <i class="bi bi-chevron-right"></i></a></li>
+              <li><a href="<?= site_url('services/car-transportation') ?>">Car Transportation <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/packing-unpacking') ?>">Packing & Unpacking <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/loading-unloading') ?>">Loading & Unloading <i class="bi bi-chevron-right"></i></a></li>
               <li><a href="<?= site_url('services/storage-solutions') ?>">Warehousing Service <i class="bi bi-chevron-right"></i></a></li>
