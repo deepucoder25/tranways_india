@@ -7,7 +7,8 @@
 /* ----- ROOT CSS VARIABLES ----- */
 :root {
   --primary-color: #3b28f6;
-  --topbar-bg: #0b0f19;
+  --accent-color: #f7a01c;
+  --topbar-bg: #0f172a; /* Changed from #0b0f19 to a richer slate navy */
   --topbar-text: #a0aabf;
   --topbar-icon-bg: #1a1f2e;
   --container-max-width: 1200px;
@@ -24,9 +25,13 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   background: #fdfdfd;
   color: var(--text-dark);
-  overflow-x: hidden;
 }

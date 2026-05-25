@@ -321,3 +321,23 @@
         text-align: center;
     }
 }
+
+@media (max-width: 575px) {
+    .footer-col, .footer-col-info, .footer-col-quote, .info-block {
+        flex: 100%;
+        min-width: 100%;
+        text-align: center;
+    }
+    .footer-logo {
+        justify-content: center;
+    }
+    .footer-contact-box {
+        justify-content: center;
+    }
+    .footer-info-row {
+        text-align: center;
+    }
+    .bottom-social-icons {
+        justify-content: center;
+    }
+}
